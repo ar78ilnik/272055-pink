@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Илья Аракчиев](https://up.htmlacademy.ru/adaptive/12/user/272055).
+* Студент: [ИльяАракчиев](https://up.htmlacademy.ru/adaptive/12/user/272055).
 * Наставник: [`Сергей Попенко`](https://htmlacademy.ru/profile/id66243).
 
 ---
