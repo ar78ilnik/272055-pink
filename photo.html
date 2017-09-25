@@ -14,10 +14,10 @@
         <button class="main-nav__toggle" type="button">Открыть список</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <a href="#"><li class="main-nav__item">главная</li></a>
-            <a href="#"><li class="main-nav__item">фотографии</li></a>
-            <a href="#"><li class="main-nav__item">конкурс</li></a>
-            <a href="#"><li class="main-nav__item">html academy</li></a>
+            <li class="main-nav__item"><a href="#">главная</a></li>
+            <li class="main-nav__item"><a href="#">фотографии</a></li>
+            <li class="main-nav__item"><a href="#">конкурс</a></li>
+            <li class="main-nav__item"><a href="#">html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -42,79 +42,89 @@
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Левон</cite>
-              <span>5 часов назад</span>
+              <time datetime="2017-03-01T00:10">5 часов назад</time>
               <blockquote class="user-articles__phrase">
               Вчера он на луну летал, сегодня в руки к нам попал.
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>356</span></div>
           </div>
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Антон</cite>
-              <span>12 часов назад</span>
+              <time datetime="2017-03-01T00:10">12 часов назад</time>
               <blockquote class="user-articles__phrase">
               Соседи будут рады!
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>666</span></div>
           </div>
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Борис</cite>
-              <span>20 часов назад</span>
+              <time datetime="2017-03-01T00:10">20 часов назад</time>
               <blockquote class="user-articles__phrase">
               Здесь могла быть ваша цитата о высоком и вечномю
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>215</span></div>
           </div>
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Сергей</cite>
-              <span>25 часов назад</span>
+              <time datetime="2017-03-01T00:10">25 часов назад</time>
               <blockquote class="user-articles__phrase">
               Самая кубанская в мире!
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>4</span></div>
           </div>
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Максим</cite>
-              <span>40 часов назад</span>
+              <time datetime="2017-03-01T00:10">40 часов назад</time>
               <blockquote class="user-articles__phrase">
               Где снег-то?
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>150</span></div>
           </div>
           <div class="user-articles__item">
             <img class="user-articles__photo" src="http://placehold.it/150x100" alt="Фотография пользователя">
               <cite class="user-articles__author">Надежда</cite>
-              <span>45 часов назад</span>
+              <time datetime="2017-03-01T00:10">45 часов назад</time>
               <blockquote class="user-articles__phrase">
               Всем GM и взаимные лайки!
               </blockquote>
-              <div class="user-articles__count-like">Нравится:</div>
+              <div class="user-articles__count-like">Нравится:<span>2560</span></div>
           </div>
       </section>
       <section class="publication">
-        <h2 class="visually-headen">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <div class="publication__heading">
+          <h2 class="publication__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        </div>
         <img class="publication__image" src="http://placehold.it/150x100">
-        <div class="publication__modify-photo setting-photo">
-          <button class="setting-photo__cut"></button>
-          <button class="setting-photo__color"></button>
-          <button class="setting-photo__contrast"></button>
+        <div class="publication__modify-photo">
+          <button class="publication__modify-photo__cut"></button>
+          <button class="publication__modify-photo__color"></button>
+          <button class="publication__modify-photo__contrast"></button>
         </div>
         <div class="publication__scale">
           <div class="publication__bar"></div>
         </div>
-        <button class="publication__post" type="button">
+        <form action="https://echo.htmlacademy.ru" method="post" class="publication__form">
+        <label for="file">
+          <input id="file" type="file" name="file">
+        </label>
+        <button class="publication__post" type="submit">
           Запостить
         </button>
+        <button class="publication__cancel" type="reset">
+          Отмена
+        </button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
       </a>
-      <section class="page-footer social">
+      <section class="page-footer__social">
           <a class="social btn-tw" href="https://twitter.com/">Twitter</a>
           <a class="social btn-fb" href="https://ru-ru.facebook.com/">Facebook</a>
           <a class="social btn-you" href="https://www.youtube.com/">Youtube</a>

@@ -11,54 +11,56 @@
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть список</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">главная</li>
-        <li class="site-list__item">фотографии</li>
-        <li class="site-list__item">конкурс</li>
-        <li class="site-list__item">html academy</li>
+      <ul class="main-nav__list">
+        <li class="site-list__item"><a href="#">главная</a></li>
+        <li class="site-list__item"><a href="#">фотографии</a></li>
+        <li class="site-list__item"><a href="#">конкурс</a></li>
+        <li class="site-list__item"><a href="#">html academy</a></li>
       </ul>
     </div>
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="visually-headen">Конкурс на самое безбашенное путешествие с Пинк</h1>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <div class="form-user">
-      <section class="form-user">
-        <h2 class="page-main__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+  <div class="page-main__heading">
+    <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
+  <form class="form-user" action="https://echo.htmlacademy.ru" method="post">
+    <div class="form-user__wrapper">
+      <section class="form-user__personal-data">
+        <h2 class="form-user__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
         <p>
-          <label for="family-field" class="form-user__user-family"> Фамилия:
-          <input type="text" name="family" id="family-field" placeholder="Укажите фамилию" required>
+          <label class="form-user__user-family" for="family-field"> Фамилия:
+          <input type="text" name="family" id="family-field" placeholder="Укажите фамилию *" required>
         </label>
         </p>
         <p>
-          <label for="name-field" class="form-user__user-name"> Имя:
-          <input type="text" name="name" id="name-field" placeholder="Введите Ваше имя" required>
+          <label class="form-user__user-name" for="name-field"> Имя:
+          <input type="text" name="name" id="name-field" placeholder="Введите Ваше имя *" required>
         </label>
         </p>
         <p>
-          <label for="secondName-field" class="form-user__user-secondname"> Отчество:
+          <label class="form-user__user-secondname" for="secondName-field"> Отчество:
           <input type="text" name="secondName" id="secondName-field" placeholder="Ну и отчество тоже">
         </label>
         </p>
       </section>
       <section class="user-progress">
-        <h2 class="page-main__text">вашт безбашенные достижения в путишествии</h2>
-        <p><input type="checkbox" class="user-progress__selfy" name="selfy" value="true" checked>Сделал селфи с акулой</p>
-        <p><input type="checkbox" class="user-progress__sunburn" name="sunburn" value="true" checked>Обгорел на пляже</p>
-        <p><input type="checkbox" class="user-progress__norris" name="norris" value="true">Видел Чака Нориса</p>
-        <p><input type="checkbox" class="user-progress__suvenir" name="suvenir" value="true">Накупил сувениров</p>
-        <p><input type="checkbox" class="user-progress__tower" name="tower" value="true" checked>Удержал башню</p>
-        <p><input type="checkbox" class="user-progress__hotel" name="hotel" value="true">Разгромил отель</p>
+        <h2 class="user-progress__headline">вашт безбашенные достижения в путишествии</h2>
+        <p><input class="user-progress__selfy" type="checkbox" name="selfy" value="true" checked>Сделал селфи с акулой</p>
+        <p><input class="user-progress__sunburn" type="checkbox" name="sunburn" value="true" checked>Обгорел на пляже</p>
+        <p><input class="user-progress__norris" type="checkbox" name="norris" value="true">Видел Чака Нориса</p>
+        <p><input class="user-progress__suvenir" type="checkbox" name="suvenir" value="true">Накупил сувениров</p>
+        <p><input class="user-progress__tower" type="checkbox" name="tower" value="true" checked>Удержал башню</p>
+        <p><input class="user-progress__hotel" type="checkbox" name="hotel" value="true">Разгромил отель</p>
       </section>
       <section class="user-adress">
         <p>
-          <label for="tlf-field" class="user-adress__user-tlf"> номер телефона
+          <label class="user-adress__user-tlf" for="tlf-field"> номер телефона
         <input type="tel" name="tel" id="tlf-field" placeholder="Номер, пожалуйста">
       </label>
         </p>
         <p>
-          <label for="mail-field" class="user-adress__user-mail"> адресс почты
+          <label class="user-adress__user-mail" for="mail-field"> адресс почты
         <input type="text" name="mail" id="mail-field" placeholder="Введите почту" required>
       </label>
         </p>
@@ -66,32 +68,32 @@
       <section class="user-app">
         <p>
           <input type="radio" name="app" id="ios-field" value="ios" checked>
-          <label for="ios-field" class="form-user__ios-app">Pink для iOS</label>
+          <label class="user-app__ios-app" for="ios-field">Pink для iOS</label>
         </p>
         <p>
           <input type="radio" name="app" id="android-field" value="android">
-          <label for="android-field" class="form-user__android-app">Pink на Android</label>
+          <label class="user-app__android-app" for="android-field">Pink на Android</label>
         </p>
         <p>
           <input type="radio" name="app" id="win-field" value="win">
-          <label for="win-field" class="form-user__win-app">Windows Phone</label>
+          <label class="user-app__win-app" for="win-field">Windows Phone</label>
         </p>
       </section>
       <section class="user-message">
-        <h2 class="page-main__text">опишите свои эмоции</h2>
+        <h2 class="user-message__text">опишите свои эмоции</h2>
         <p class="user-message__message">Можно прям в красках, не стесняясь в выражениях</p>
-        <textarea class="user-message__text" name="textarea" rows="10" cols="50"></textarea>
+        <textarea class="user-message__area" name="textarea" rows="10" cols="50"></textarea>
       </section>
-      <div class="form-user__sub-button">
-        <button type="submit">отправить форму</button>
+      <div class="form-user__submit">
+        <button class="form-user__submit-button" type="submit">отправить форму</button>
       </div>
-      <p><span class="required">*</span>- обязательные поля</p>
+      <p><span class="form-user__required">*</span>- обязательные поля</p>
     </div>
   </form>
 </main>
 <footer class="page-footer">
   <a class="page-footer__logo">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
+    <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
   </a>
   <section class="page-footer social">
     <a class="social btn-tw" href="https://twitter.com/">Twitter</a>
