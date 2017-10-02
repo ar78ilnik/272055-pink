@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: @blue;
+  font-style: normal;
+  font-weight: 400;
+  background-color: @white;
+}
+
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-header {
+  min-width: 320px;
+  min-height: 730px;
+  color: @white;
+  background-color: @blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 700px auto;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.main-nav {
+  min-height: 66px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  &__logo,
+  &__navigation-header {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__logo-header {
+    width: 75px;
+    height: 22px;
+    font-size: 0;
+    position: absolute;
+    top: 22px;
+    left: 0;
+  }
+
+  &__toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 205px;
+    min-height: 24px;
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon-menu-burger {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    fill: @white;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    text-align: center;
+    background-color: @blue;
+    border-bottom: 1px solid @black-header;
+    border-top: 1px solid @border-top-header;
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-decoration: none;
+    color: @white;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.app {
+  padding-top: 397px;
+
+  &__icon {
+    padding-top: 28px;
+  }
+
+  &__icon::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 258 286;
+    width: 258px;
+    height: 286px;
+    top: 185px;
+    left: 10;
+  }
+
+  &__app-button-content {
+    padding: 14px 25px 17px;
+    text-decoration: none;
+    border: 3px solid @white;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: @white;
+    font-weight: 700;
+  }
+
+  &__android,
+  &__itunes,
+  &__win {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__itunes {
+    margin-top: 32px;
+    margin-left: 37px;
+  }
+
+  &__android,
+  &__win {
+    margin-top: 40px;
+  }
+
+  &__android {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  &__promo {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.promo {
+  padding-top: 40px;
+  text-align: center;
+
+  &__text,
+  &__text-offer {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: auto;
+    color: @blue;
+    margin: 0 0 28px;
+  }
+
+  &__items {
+    background-color: @white-happy;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    padding-top: 80px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 10px;
+    color: @blue;
+    margin-bottom: 12px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    color: @blue;
+  }
+}
+
+.slider {
+  position: relative;
+  text-align: center;
+
+  &__author {
+    font-size: 18px;
+    line-height: 30px;
+    color: @black;
+    font-weight: 700;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 30px;
+    color: @blue;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    margin-right: 20px;
+    background-color: @btn;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__btn::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    top: -2px;
+    left: 0;
+    border: 3px solid @blue;
+    border-radius: 50%;
+  }
+}
+
+.prices {
+  padding-top: 91px;
+  padding-bottom: 26px;
+  background-color: @white-happy;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 840px;
+    box-sizing: border-box;
+  }
+
+  &__list-head {
+    text-transform: uppercase;
+    color: @white;
+    background-color: @blue;
+  }
+
+  &__list-head p {
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  &__list-body {
+    background-color: #fff;
+  }
+
+  &__hit {
+    position: absolute;
+    display: none;
+  }
+
+  &__value {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 280px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-left: 2px solid @white;
+  }
+
+  &__value:nth-child(2) {
+    border-left: none;
+  }
+
+  &__value-red {
+    display: block;
+    top: 0;
+    left: -2px;
+  }
+
+  &__value-red::before {
+    position: absolute;
+    content: "хит";
+    height: 20px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @red;
+    transform: rotate(-45deg);
+  }
+
+  &__field {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    text-transform: uppercase;
+    border: 2px solid @white;
+    border-top: none;
+
+    .field-ok::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 16px;
+      top: 5px;
+      right: 20px;
+      background-image: url("../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .field-cancel::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 16px;
+      top: 5px;
+      right: 20px;
+      background-image: url("../img/icon-menu-cross.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.page-footer {
+  text-align: center;
+  &__content {
+    margin-bottom: 23px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__call,
+  &__write,
+  &__visit {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 4px;
+    font-style: normal;
+  }
+  &__tlf,
+  &__mail,
+  &__address {
+    font-size: 24px;
+    line-height: 29px;
+    color: @red;
+  }
+}
