@@ -1,89 +1,117 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк Форма</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
-  </a>
+<header class="page-header photo">
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть список</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="site-list__item"><a href="#">главная</a></li>
-        <li class="site-list__item"><a href="#">фотографии</a></li>
-        <li class="site-list__item"><a href="#">конкурс</a></li>
-        <li class="site-list__item"><a href="#">html academy</a></li>
-      </ul>
+    <div class="main-nav__logo wrapper">
+      <a class="main-nav__logo-header" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'">
+      </a>
+      <button class="main-nav__toggle">
+        <img class="main-nav__icon-menu-burger" src="img/icon-menu-burger.svg">
+        Открыть список
+      </button>
+    </div>
+    <div class="main-nav__navigation-header wrapper">
+      <!--<ul class="main-nav__list">
+        <li class="main-nav__item-nav-height"></li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">html academy</a>
+        </li>
+      </ul>-->
     </div>
   </nav>
+  <section class="page-header__intro wrapper">
+    <h1 class="page-header__intro-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </section>
 </header>
 <main class="page-main">
-  <div class="page-main__heading">
-    <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
-  </div>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <div class="form__wrapper">
       <section class="form__personal-data">
-        <h2 class="form__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="form__text wrapper">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
         <p>
-          <label class="form__user-family" for="family-field"> Фамилия:
-          <input type="text" name="family" id="family-field" placeholder="Укажите фамилию *" required>
+          <label class="form__user-name" for="family-field"> фамилия:
+          <input type="text" name="family" id="family-field" class="form__input" placeholder="Введите Ваше имя *" required>
         </label>
         </p>
         <p>
-          <label class="form__user-name" for="name-field"> Имя:
-          <input type="text" name="name" id="name-field" placeholder="Введите Ваше имя *" required>
+          <label class="form__user-name" for="name-field"> имя:
+          <input type="text" name="name" id="name-field" class="form__input" placeholder="Укажите фамилию *" required>
         </label>
         </p>
         <p>
-          <label class="form__user-secondname" for="secondName-field"> Отчество:
-          <input type="text" name="secondName" id="secondName-field" placeholder="Ну и отчество тоже">
+          <label class="form__user-name" for="secondName-field"> отчество:
+          <input type="text" name="secondName" id="secondName-field" class="form__input" placeholder="Ну и отчество тоже">
         </label>
         </p>
       </section>
       <section class="user-progress">
-        <h2 class="user-progress__headline">вашт безбашенные достижения в путишествии</h2>
-        <label for="selfy">Сделал селфи с акулой</label>
-        <input class="user-progress__selfy" id="selfy" type="checkbox" name="selfy" value="true" checked>
-        <label for="sunburn">Обгорел на пляже</label>
-        <input class="user-progress__sunburn" id="sunburn" type="checkbox" name="sunburn" value="true" checked>
-        <label for="norris">Видел Чака Нориса</label>
-        <input class="user-progress__norris" id="norris" type="checkbox" name="norris" value="true">
-        <label for="suvenir">Накупил сувениров</label>
-        <input class="user-progress__suvenir" id="suvenir" type="checkbox" name="suvenir" value="true">
-        <label for="tower">Удержал башню</label>
-        <input class="user-progress__tower" id="tower" type="checkbox" name="tower" value="true" checked>
-        <label for="hotel">Разгромил отель</label>
-        <input class="user-progress__hotel" id="hotel" type="checkbox" name="hotel" value="true">
+        <h2 class="user-progress__headline">ваши безбашенные достижения в путишествии</h2>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="selfy" type="checkbox" name="selfy" value="true" checked="checked">
+          <label class="user-progress__label" for="selfy">Сделал селфи с акулой</label>
+        </p>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="sunburn" type="checkbox" name="sunburn" value="true" checked>
+          <label class="user-progress__label" for="sunburn">Обгорел на пляже</label>
+        </p>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="norris" type="checkbox" name="norris" value="true">
+          <label class="user-progress__label" for="norris">Видел Чака Нориса</label>
+        </p>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="suvenir" type="checkbox" name="suvenir" value="true">
+          <label class="user-progress__label" for="suvenir">Накупил сувениров</label>
+        </p>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="tower" type="checkbox" name="tower" value="true" checked>
+          <label class="user-progress__label" for="tower">Удержал башню</label>
+        </p>
+        <p class="user-progress__field">
+          <input class="user-progress__input" id="hotel" type="checkbox" name="hotel" value="true">
+          <label class="user-progress__label" for="hotel">Разгромил отель</label>
+        </p>
       </section>
       <section class="user-adress">
         <p>
-          <label class="user-adress__user-tlf" for="tlf-field"> номер телефона
-        <input type="tel" name="tel" id="tlf-field" placeholder="Номер, пожалуйста">
+          <label class="user-adress__label" for="tlf-field"> номер телефона
+        <input type="tel" name="tel" id="tlf-field" class="user-adress__input" placeholder="Номер, пожалуйста">
       </label>
         </p>
         <p>
-          <label class="user-adress__user-mail" for="mail-field"> адресс почты
-        <input type="text" name="mail" id="mail-field" placeholder="Введите почту" required>
+          <label class="user-adress__label" for="mail-field"> адресс почты
+        <input type="text" name="mail" id="mail-field" class="user-adress__input" placeholder="Введите почту" required>
       </label>
         </p>
       </section>
       <section class="user-app">
         <p class="user-app__question">С каким приложением путешествовали?</p>
-        <p>
-          <input type="radio" name="app" id="ios-field" value="ios" checked>
-          <label class="user-app__ios-app" for="ios-field">Pink для iOS</label>
+        <p class="user-app__field">
+          <input type="radio" name="app" id="ios-field" class="user-app__radio" value="ios" checked>
+          <label class="user-app__label" for="ios-field">Pink для iOS</label>
         </p>
-        <p>
-          <input type="radio" name="app" id="android-field" value="android">
-          <label class="user-app__android-app" for="android-field">Pink на Android</label>
-        </p>
-        <p>
-          <input type="radio" name="app" id="win-field" value="win">
-          <label class="user-app__win-app" for="win-field">Windows Phone</label>
+        <p class="user-app__field">
+          <input type="radio" name="app" id="android-field" class="user-app__radio" value="android">
+          <label class="user-app__label" for="android-field">Pink на Android</label>
+        </p class="user-app__field">
+        <p class="user-app__field">
+          <input type="radio" name="app" id="win-field" class="user-app__radio" value="win">
+          <label class="user-app__label" for="win-field">Windows Phone</label>
         </p>
       </section>
       <section class="user-message">
@@ -92,14 +120,14 @@
       </section>
       <div class="form__submit">
         <button class="form__submit-button" type="submit">отправить форму</button>
+        <p class="form__required"><span class="form__star">*</span>- обязательные поля</p>
       </div>
-      <p><span class="form__required">*</span>- обязательные поля</p>
     </div>
   </form>
 </main>
 <footer class="page-footer">
   <a class="page-footer__logo">
-    <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
+    <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Интернет-магазин 'Pink'">
   </a>
   <section class="page-footer social">
     <a class="social btn-tw" href="https://twitter.com/">Twitter</a>
@@ -107,9 +135,9 @@
     <a class="social btn-you" href="https://www.youtube.com/">Youtube</a>
   </section>
   <section class="page-footer__copyright">
-    <p>Разработано</p>
+    <p class="page-footer__dev">Разработано</p>
     <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Интернет-магазин 'Pink'">
+      <img class="page-footer__logo-image" src="img/logo-htmlacademy.svg" alt="Интернет-магазин 'Pink'">
     </a>
   </section>
 </footer>

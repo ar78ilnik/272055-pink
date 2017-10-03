@@ -1,0 +1,44 @@
+.user-progress {
+  &__headline {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @red;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__label {
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  &__field:first-child {
+    padding-top: 12px;
+  }
+  &__field {
+    padding-top: 43px;
+  }
+  &__input + &__label{
+    position: relative;
+    display: block;
+    padding-left: 50px;
+  }
+  &__input {
+    display: none;
+  }
+  &__input:checked + &__label::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    background-position: center center;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+  }
+}

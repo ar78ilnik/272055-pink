@@ -1,0 +1,114 @@
+.prices {
+  padding-top: 91px;
+  padding-bottom: 26px;
+  background-color: @white-happy;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 840px;
+    box-sizing: border-box;
+  }
+
+  &__list-head {
+    text-transform: uppercase;
+    color: @white;
+    background-color: @blue;
+  }
+
+  &__list-head p {
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  &__list-body {
+    background-color: #fff;
+  }
+
+  &__hit {
+    position: absolute;
+    display: none;
+  }
+
+  &__value {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 280px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-left: 2px solid @white;
+  }
+
+  &__value:nth-child(2) {
+    border-left: none;
+  }
+
+  &__value-red {
+    display: block;
+    top: 0;
+    left: -2px;
+  }
+
+  &__value-red::before {
+    position: absolute;
+    content: "хит";
+    height: 20px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @red;
+    transform: rotate(-45deg);
+  }
+
+  &__field {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    text-transform: uppercase;
+    border: 2px solid @white;
+    border-top: none;
+
+    .field-ok::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 16px;
+      top: 5px;
+      right: 20px;
+      background-image: url("../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .field-cancel::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 16px;
+      top: 5px;
+      right: 20px;
+      background-image: url("../img/icon-menu-cross.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

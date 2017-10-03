@@ -1,0 +1,30 @@
+.user-app {
+  width: 280px;
+  margin: 0 auto;
+  padding: 28px 0 30px;
+  box-sizing: border-box;
+  &__radio {
+    position: relative;
+    display: none;
+    padding: 0;
+  }
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 45px;
+  }
+  &__radio + &__label::before, &__radio:checked + &__label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    top: -3px;
+    left: 0;
+    background-image: url(../img/icon-map-marker.svg);
+    background-repeat: no-repeat;
+  }
+}

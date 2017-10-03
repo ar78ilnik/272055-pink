@@ -1,0 +1,61 @@
+.form {
+  padding-top: 45px;
+  padding-bottom: 15px;
+  &__text{
+    font-size: 14px;
+    line-height: 30px;
+    color: @blue;
+    text-align: center;
+    font-weight: lighter;
+  }
+  &__name {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 23px;
+    color: @red;
+    text-transform: uppercase;
+  }
+  &__user-family,
+  &__user-name,
+  &__user-secondname,
+   {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: @red;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding-left: 23px;
+  }
+  &__input {
+    font-size: 18px;
+    line-height: 30px;
+    color: @blue;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 14px 22px 15px;
+    margin-bottom: 16px;
+  }
+  &__required {
+    font-size: 14px;
+    line-height: 30px;
+    color: @blue;
+  }
+  &__star {
+    color: @red;
+  }
+  &__submit {
+    text-align: center;
+  }
+  &__submit-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: @white;
+    width: 280px;
+    height: 60px;
+    background-color: @form-button;
+  }
+}
