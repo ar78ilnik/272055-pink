@@ -1,0 +1,79 @@
+.publication {
+  color: @blue;
+  &__title {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__title:first-of-type {
+    margin-top: 0;
+    padding-top: 23px;
+  }
+  &__title:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 42px;
+  }
+  &__photo {
+    width: 48px;
+    height: 48px;
+    cut{
+      background-image: url('../img/icon-editor-fill.svg');
+    }
+    color {
+      background-image: url("../img/icon-editor-fill.svg");
+    }
+    contraste {
+      background-image: url("../img/icon-editor-contrast.svg");
+    }
+  }
+  &__form {
+    padding-top: 20px;
+    padding-bottom: 29px;
+  }
+  &__tools {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+  }
+  &__tools-list {
+    position: relative;
+    padding-top: 42px;
+    margin-bottom: 38px;
+  }
+  &__tool {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 18px;
+    margin-left: 17px;
+    padding-bottom: 76px;
+    width: 48px;
+    height: 44px;
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+  }
+  &__tool-active {
+    opacity: 1;
+  }
+  &__button {
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    width: 280px;
+    margin: 0 12px;
+    padding: 14px 88px 17px;
+    background-color: @white;
+  }
+  &__button-submit {
+    color: @red;
+    border: 3px solid @red;
+    border-radius: 30px;
+  }
+  &__button-reset {
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 30px;
+  }
+}

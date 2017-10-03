@@ -1,0 +1,59 @@
+.app {
+  padding-top: 397px;
+
+  &__icon {
+    padding-top: 28px;
+  }
+
+  &__icon::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 258 286;
+    width: 258px;
+    height: 286px;
+    top: 185px;
+    left: 10;
+  }
+
+  &__app-button-content {
+    padding: 14px 25px 17px;
+    text-decoration: none;
+    border: 3px solid @white;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: @white;
+    font-weight: 700;
+  }
+
+  &__android,
+  &__itunes,
+  &__win {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__itunes {
+    margin-top: 32px;
+    margin-left: 37px;
+  }
+
+  &__android,
+  &__win {
+    margin-top: 40px;
+  }
+
+  &__android {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  &__promo {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
