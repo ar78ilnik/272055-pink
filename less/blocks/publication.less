@@ -1,9 +1,40 @@
 .publication {
   color: @blue;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    @media (min-width: @tablet-width) {
+      min-width: 620px;
+      flex-grow: 1;
+    }
+  }
+  &__form-box {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__image {
+    @media (min-width: @tablet-width) {
+      width: 300px;
+    }
+  }
+  &__form {
+    @media (min-width: @tablet-width) {
+      flex-basis: 300px;
+    }
+  }
   &__title {
     font-size: 14px;
     line-height: 30px;
+    font-weight: 400;
     text-align: center;
+    @media (min-width: @tablet-width) {
+      font-size: 18px;
+    }
   }
   &__title:first-of-type {
     margin-top: 0;
@@ -24,6 +55,13 @@
     }
     contraste {
       background-image: url("../img/icon-editor-contrast.svg");
+    }
+  }
+  &__image {
+    width: 280px;
+    margin: 0 auto;
+    @media (min-width: @tablet-width) {
+      width: 300px;
     }
   }
   &__form {
