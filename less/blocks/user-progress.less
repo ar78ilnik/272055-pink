@@ -1,4 +1,8 @@
 .user-progress {
+    box-sizing: border-box;
+    padding-top: 35px;
+    padding-bottom: 18px;
+    order: 3;
   &__headline {
     font-size: 14px;
     line-height: 18px;
@@ -9,6 +13,11 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   &__label {
     font-size: 18px;
     line-height: 30px;
@@ -16,10 +25,10 @@
     vertical-align: middle;
     display: inline-block;
   }
-  &__field:first-child {
+  &__list-item:first-child {
     padding-top: 12px;
   }
-  &__field {
+  &__list-item {
     padding-top: 43px;
   }
   &__input + &__label{
@@ -30,7 +39,23 @@
   &__input {
     display: none;
   }
-  &__input:checked + &__label::before {
+  &__label-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__label-checkbox::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+    border: 2px solid @silver;
+  }
+  &__input:checked + &__label-checkbox::before {
     content: "";
     position: absolute;
     left: 10px;
@@ -40,5 +65,34 @@
     background-position: center center;
     background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
+  }
+  .checkbox:checked + .label-checkbox .icon-yes {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 7px;
+    fill: @red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-progress {
+    width: 620px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 57px;
+    padding-right: 57px;
+    order: 2;
+    //не меняется order когда изменяется на планшетный режим
+  }
+  .user-progress__headline {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-progress {
+    width: 940px;
+    order: 3;
   }
 }

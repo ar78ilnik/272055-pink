@@ -1,5 +1,20 @@
 .user-adress {
-  padding-bottom: 39px;
+  width: 620px;
+  padding-left: 57px;
+  padding-right: 57px;
+  //border: 2px solid @silver;
+  border-radius: 2px;
+  &__question {
+    line-height: 30px;
+  }
+  &__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3px;
+    margin-bottom: 30px;
+  }
   &__label {
     text-transform: uppercase;
     font-size: 14px;
@@ -18,5 +33,38 @@
     border-radius: 2px;
     padding: 14px 22px 15px;
     margin-bottom: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-adress__list-item {
+    padding-left: 0;
+    padding-right: 22px;
+    margin-bottom: 0;
+    order: 1;
+  }
+  .user-adress__list-item::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(img/yyyyy.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    top: 23px;
+    right: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-adress {
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  order: 2;
+  }
+  .user-adress__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

@@ -1,34 +1,106 @@
 .page-footer {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 280px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 46px;
-    @media (min-width: @tablet-width) {
-      width: 620px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
+  background-color: transparent;
   &__logo {
-    width: 147px;
+    width: 146px;
     height: 40px;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-bottom: 35px;
   }
-  &__dev {
+  &__social {
+    font-size: 0;
+    padding-top: 0;
+    margin: 0 auto 35px;
+  }
+  &__social-btn-tw {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    vertical-align: middle;
     position: relative;
-    @media (min-width: @tablet-width) {
-      width: 1500px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-    }
+    margin: 0 5px;
+    line-height: 0;
+    background-color: @white;
+    border: 2px solid @border-footer;
+    border-radius: 50%;
   }
-  &__copyright-link {
+  &__link-tw {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    fill: @red;
+  }
+  &__social-btn-fb {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 5px;
+    line-height: 0;
+    background-color: @white;
+    border: 2px solid @border-footer;
+    border-radius: 50%;
+  }
+  &__link-fb {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    fill: @red;
+  }
+  &__social-btn-you {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 5px;
+    line-height: 0;
+    background-color: @white;
+    border: 2px solid @border-footer;
+    border-radius: 50%;
+  }
+  &__link-you {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    fill: @red;
+  }
+  &__copyright {
+    display: block;
+    position: relative;
+  }
+  &__logo {
     font-size: 14px;
     line-height: 18px;
-    padding-right: 42px;
+    padding-right: 43px;
     color: @blue;
     text-decoration: none;
+  }
+  &__logo-htmlacademy {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    fill: @red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-bottom: 37px;
+    width: 620px;
   }
 }
