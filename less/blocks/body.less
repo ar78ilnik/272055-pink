@@ -7,15 +7,14 @@ body {
   color: @blue;
   font-style: normal;
   font-weight: 400;
-  width: 320px;
+  min-width: 320px;
   @media (min-width: @tablet-width) {
-      min-width: 660px;
+      width: 100%;
   }
   @media (min-width: @desktop-width) {
     width: 100%;
   }
 }
-
 
 img {
   max-width: 100%;

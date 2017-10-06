@@ -1,18 +1,11 @@
 .user-articles {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 
-@media (min-width: @tablet-width) {
-  .user-articles {
-    display: flex;
-    width: 660px;
-    justify-content: center;
-  }
-}
 &__item {
   margin-left: 0;
   margin-right: 0;
@@ -21,35 +14,13 @@
   line-height: 30px;
   position: relative;
 }
-@media (min-width: @tablet-width) {
-  .user-articles__item {
-    width: 300px;
-  }
-}
 
-  &__item-hit {
-    width: 320px;
-    height: 350px;
-    background-image: url(../img/panorama-mobile1@x.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &__title {
+&__title {
     display: block;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     font-weight: lighter;
-  }
-  @media (min-width: @tablet-width) {
-    .user-articles__title {
-    font-size: 18px;
-    margin-top: 105px;
-    padding-bottom: 85px;
-    width: 435px;
-    margin: 0 auto;
-  }
   }
 
   &__item-hit {
@@ -122,4 +93,30 @@
     color: @red;
     text-transform: uppercase;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .user-articles {
+    display: flex;
+    flex-basis: 660px;
+    justify-content: center;
+  }
+  .user-articles__photo-hit {
+    width: 660px;
+    height: 350px;
+    background-image: url(../img/panorama-tablet1@x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .user-articles__item-hit {
+    width: 660px;
+    background-color: @white;
+  }
+  .user-articles__title {
+  font-size: 18px;
+  margin-top: 105px;
+  padding-bottom: 85px;
+  width: 435px;
+  margin: 0 auto;
+}
 }
