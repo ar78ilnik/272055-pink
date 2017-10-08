@@ -6,7 +6,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg") ;
   background-color: @blue;
 }
-.page-header-form {
+  &__intro-index {
+    display: none;
+  }
+  .page-header-form {
   &__intro {
     width: 280px;
     margin: 0 auto;
@@ -18,10 +21,7 @@
   }
 }
 @media (min-width: @tablet-width) {
-  .page-header-index {
-    min-height: 730px;
-    background-image: url("../img/back-tablet-photo.jpg") ;
-  }
+
   .page-header-photo {
     min-height: 438px;
     background-image: url("../img/back-tablet-photo.jpg") ;
@@ -45,19 +45,9 @@
 }
 @media (min-width: @desktop-width) {
   .page-header {
-    min-height: 394px;
+    min-height: 853px;
     background-image: url("../img/back-desktop.jpg");
     background-size: 2560px auto;
     background-position: 50% 0;
-  }
-  .page-header__intro-title {
-    padding-top: 65px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 50px;
-    line-height: 60px;
-    color: @white;
-    width: 820px;
-    margin: 0 auto;
   }
 }

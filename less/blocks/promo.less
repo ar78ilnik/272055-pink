@@ -1,7 +1,6 @@
 .promo {
   padding-top: 40px;
   text-align: center;
-
   &__text,
   &__text-offer {
     text-align: center;
@@ -11,7 +10,6 @@
     color: @blue;
     margin: 0 0 28px;
   }
-
   &__items {
     background-color: @white-happy;
     background-image: url("../img/bg-triangle-white.svg");
@@ -20,17 +18,182 @@
     background-position: 50% 0;
     padding-top: 80px;
   }
-
   &__title {
     font-size: 18px;
     line-height: 10px;
     color: @blue;
     margin-bottom: 12px;
   }
-
   &__paragraph {
     font-size: 14px;
     line-height: 24px;
     color: @blue;
+  }
+  &__britn {
+    display: none;
+  }
+}
+@media (min-width: @tablet-width) {
+  .promo {
+    padding-top: 50px;
+  }
+  .promo__text {
+    margin: 0 0 28px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .promo__text-offer {
+    width: 408px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 45px;
+  }
+  .promo__items {
+    width: 620px;
+    min-height: 410px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 0;
+    position: relative;
+  }
+  .promo__items::before {
+    position: absolute;
+    content: "";
+    width: 268px;
+    height: 481px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    background-size: 269px auto;
+  }
+  .promo__happy {
+    margin-left: 300px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .promo__images {
+    display: none;
+  }
+  .promo__britn {
+    display: block;
+    width: 320px;
+    position: relative;
+    min-height: 183px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-left: 315px;
+    padding-bottom: 110px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 115px;
+    background-size: 204px 204px;
+  }
+  .promo__slogan {
+    width: 170px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .promo__content {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+  .promo__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__text,
+  .promo__text-offer {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: lighter;
+  }
+  .promo__items {
+    padding: 0;
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .promo__items::before {
+    background: none;
+  }
+  .promo__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+  }
+  .promo__paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .promo__happy {
+    margin-top: 12px;
+    flex-basis: 300px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .promo__images {
+    display: block;
+    height: 300px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .promo__image-desktop {
+    display: none;
+  }
+  .promo__happy:nth-child(1) {
+    background-image: url("../img/iphone-copy3-desktop-black.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .promo__happy:nth-child(2) {
+    background-image: url("../img/iphone-copy3-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .promo__happy:nth-child(3) {
+    background-image: url("../img/iphone-copy3-desktop-happy.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .promo__britn {
+    width: 940px;
+    padding-top: 157px;
+    padding-bottom: 115px;
+    padding-left: 365px;
+    background-size: 253px 253px;
+    background-position: 23px 136px;
+  }
+  .promo__content {
+    width: 580px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-right: 45px;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .promo__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

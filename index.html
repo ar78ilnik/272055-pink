@@ -37,107 +37,142 @@
       </ul>-->
     </div>
   </nav>
-  <div class="app wrapper">
-    <div class="app__icon">
-      <div class="app__app-button">
-        <a class="app__app-button-content" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+  <div class="intro-index">
+    <div class="intro-index__wrapper">
+    <div class="intro-index__slogan">
+      <h1 class="intro-index__slogan-content">Взгляните на жизнь иначе!</h1>
+    </div>
+    <div class="app">
+      <div class="app__icon">
+        <div class="app__app-button">
+          <a class="app__app-button-content" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        </div>
+        <a class="app__itunes" href="https://www.apple.com/ru/itunes/"><img src="img/logo-apple.svg"></a>
+        <a class="app__android" href="https://play.google.com/store"><img src="img/logo-android.svg"></a>
+        <a class="app__win" href="https://www.microsoft.com/ru-RU/store/apps"><img src="img/logo-microsoft.svg"></a>
+        <p class="app__promo">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <a class="app__itunes" href="https://www.apple.com/ru/itunes/"><img src="img/logo-apple.svg"></a>
-      <a class="app__android" href="https://play.google.com/store"><img src="img/logo-android.svg"></a>
-      <a class="app__win" href="https://www.microsoft.com/ru-RU/store/apps"><img src="img/logo-microsoft.svg"></a>
-      <p class="app__promo">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </div>
+</div>
 </header>
 
 <main class="page-main">
-  <div class="promo wrapper">
+  <div class="promo">
     <p class="promo__text">Устали от серости мегаполиса?</p>
     <p class="promo__text-offer">Нам есть, что вам предложить!</p>
     <div class="promo__items">
       <div class="promo__happy">
-        <b class="promo__title">Поднимает настроение</b>
+        <div class="promo__images"></div>
+        <h4 class="promo__title">Поднимает настроение</h4>
         <p class="promo__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </div>
-      <div class="promo__change">
-        <b class="promo__title">Меняет мир вокруг</b>
+      <div class="promo__happy">
+        <div class="promo__images"></div>
+        <h4 class="promo__title">Меняет мир вокруг</h4>
         <p class="promo__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </div>
-      <div class="promo__friends">
-        <b class="promo__title">Заводит новых друзей</b>
-        <p class="promo__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        <div class="promo__images">
+      <div class="promo__happy">
+        <div class="promo__images"></div>
+        <div class="promo__image-desktop">
           <img src="img/iphone-screen-mobile@1x.png" alt="Мобильный телефон">
         </div>
+        <h4 class="promo__title">Заводит новых друзей</h4>
+        <p class="promo__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
     </div>
   </div>
-  <div class="slider">
-    <input id="btn-1" class="slider__input" name="toggle" checked="" type="radio">
-    <input id="btn-2" class="slider__input" name="toggle" type="radio">
-    <input id="btn-3" class="slider__input" name="toggle" type="radio">
-    <div class="slider__controls">
-      <label class="slider__btn 1" for="btn-1">1</label>
-      <label class="slider__btn 2" for="btn-2">2</label>
-      <label class="slider__btn 3" for="btn-3">3</label>
-    </div>
+  <article class="promo__britn">
+    <h2 class="promo__slogan">Эффект на 24 часа!</h2>
+    <p class="promo__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+    <a class="promo__link" href="#">Узнать больше об исследовании</a>
+  </article>
+  <section class="slider">
     <!--<Блок со слайдами-->
     <div class="slider__items">
+      <input id="btn1" class="slider__switch" name="sliders" checked="" type="radio">
+      <input id="btn2" class="slider__switch" name="sliders" type="radio">
+      <input id="btn3" class="slider__switch" name="sliders" type="radio">
       <div class="slider__slider-item">
-        <cite class="slider__author">Николай Петров</cite>
+        <div class="slider__wrapper">
+          <cite class="slider__author">Николай Петров</cite>
+          <p class="slider__info">25 лет, водитель трамвая</p>
+        </div>
         <blockquote class="slider__paragraph">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
       </div>
-      <!--<div class="slider__item">
+      <div class="slider__slider-item">
+        <div class="slider__wrapper">
         <cite class="slider__author">Николай Петров</cite>
+        <p class="slider__info">25 лет, водитель трамвая</p>
+      </div>
         <blockquote class="slider__paragraph">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
       </div>
-      <div class="slider__item">
+      <div class="slider__slider-item">
+        <div class="slider__wrapper">
         <cite class="slider__author">Николай Петров</cite>
+        <p class="slider__info">25 лет, водитель трамвая</p>
+      </div>
         <blockquote class="slider__paragraph">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
-      </div>-->
-    </div>
-  </div>
-  <div class="prices wrapper">
+      </div>
+      <button class="slider__toggle slider__toggle-prev">предыдущий отзыв</button>
+      <button class="slider__toggle slider__toggle-next">следующий отзыв</button>
+      <div class="slider-controls slider__nav">
+        <label class="slider__items-btn" for="btn1"></label>
+        <label class="slider__items-btn" for="btn2"></label>
+        <label class="slider__items-btn" for="btn3"></label>
+      </div>
+      </div>
+  </section>
+  <div class="prices">
+    <div class="prices__items">
       <table class="prices__list">
         <thead class="prices__list-head">
           <tr>
-            <th class="prices__value">База<p>1,99 USD</p></th>
-            <th class="prices__value prices__value-red">Стандарт<p>3,99 USD</p></th>
-            <th class="prices__value">Анлим<p>9,99 USD</p></th>
+            <th class="prices__value prices__value-empty"></th>
+            <th class="prices__value">База<p class="prices__value-price">1,99 USD</p></th>
+            <th class="prices__value prices__value-red">Стандарт<p class="prices__value-price">3,99 USD</p></th>
+            <th class="prices__value">Анлим<p class="prices__value-price">9,99 USD</p></th>
           </tr>
         </thead>
         <tbody class="prices__list-body">
           <tr>
-            <td class="prices__field field-ok">Розовый фильтр</td>
-            <td class="prices__field field-ok">Розовый фильтр</td>
-            <td class="prices__field field-ok">Розовый фильтр</td>
+            <td class="prices__field prices__field-empty">Розовый фильтр</td>
+            <td class="prices__field prices__field-ok">Розовый фильтр</td>
+            <td class="prices__field prices__field-ok">Розовый фильтр</td>
+            <td class="prices__field prices__field-ok">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="prices__field field-cancel">Смайлики</td>
-            <td class="prices__field field-ok">Смайлики</td>
-            <td class="prices__field field-ok">Смайлики</td>
+            <td class="prices__field prices__field-empty">Смайлики</td>
+            <td class="prices__field prices__field-cancel">Смайлики</td>
+            <td class="prices__field prices__field-ok">Смайлики</td>
+            <td class="prices__field prices__field-ok">Смайлики</td>
           </tr>
           <tr>
-            <td class="prices__field field-cancel">Комментарии</td>
-            <td class="prices__field field-cancel">Комментарии</td>
-            <td class="prices__field field-ok">Комментарии</td>
+            <td class="prices__field prices__field-empty">Комментарии</td>
+            <td class="prices__field prices__field-cancel">Комментарии</td>
+            <td class="prices__field prices__field-cancel">Комментарии</td>
+            <td class="prices__field prices__field-ok">Комментарии</td>
           </tr>
         </tbody>
       </table>
+      <input id="radio1" class="prices__switch" name="price" type="radio">
+      <input id="radio1" class="prices__switch" name="price" type="radio" checked="">
+      <input id="radio1" class="prices__switch" name="price" type="radio">
+    </div>
   </div>
 </main>
-<footer class="page-footer wrapper">
+<footer class="page-footer">
   <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
-  <div class="page-footer__content">
-    <span class="page-footer__call">Звоните:</span>
+  <div class="page-footer__call">
+    <span class="page-footer__content">Звоните:<br></span>
     <a class="page-footer__tlf" href="callto:+7(812)555-66-66">+7(812)555-66-66</a>
   </div>
-  <div class="page-footer__content">
-    <span class="page-footer__write">Пишите:</span>
+  <div class="page-footer__write">
+    <span class="page-footer__content">Пишите:</span>
     <a class="page-footer__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   </div>
-  <address class="page-footer__content">
-    <span class="page-footer__visit">Приезжайте в гости:</span>
+  <address class="page-footer__visit">
+    <span class="page-footer__content">Приезжайте в гости:</span>
     <p class="page-footer__address">ул. Большая<br>Конюшенная,19/8</p>
   </address>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.32089461630908!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506336716158"

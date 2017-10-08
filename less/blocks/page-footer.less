@@ -95,12 +95,42 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    width: 620px;
+    padding-bottom: 26px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 35px;
-    padding-bottom: 37px;
-    width: 620px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .page-footer__title {
+    width: 400px;
+  }
+  .page-footer__call,
+  .page-footer__write {
+    width: 300px;
+    height: 60px;
+  }
+  .page-footer__visit {
+    width: 320px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: desktop-width) {
+  // не подключаются стили футера
+  .page-footer {
+    min-width: 940px;
+  }
+  .page-footer__title {
+    width: 640px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+  .page-footer__call,
+  .page-footer__visit,
+  .page-footer__write {
+    display: inline-block;
   }
 }
