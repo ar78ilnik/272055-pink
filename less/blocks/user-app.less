@@ -1,12 +1,40 @@
 .user-app {
-  width: 280px;
-  margin: 0 auto;
-  padding: 28px 0 30px;
+  min-height: 340px;
+  padding-top: 35px;
+  margin-bottom: 60px;
   box-sizing: border-box;
-  &__radio {
-    position: relative;
-    display: none;
+  order: 5;
+  &__feedback {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-right: 0;
+    border: none;
+  }
+  &__question {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: @red;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
     padding: 0;
+  }
+  &__list:first-child {
+    padding-top: 9px;
+  }
+  &__list-item {
+    padding-top: 36px;
+  }
+  &__radio {
+    display: none;
   }
   &__label {
     display: inline-block;
@@ -14,17 +42,54 @@
     position: relative;
     font-size: 18px;
     line-height: 30px;
-    padding-left: 45px;
   }
-  &__radio + &__label::before, &__radio:checked + &__label::before {
+  &__label::before {
     content: "";
-    position: absolute;
-    display: block;
     width: 35px;
     height: 35px;
-    top: -3px;
-    left: 0;
-    background-image: url(../img/icon-map-marker.svg);
-    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    background-color: @white;
+    border: 1px solid @silver;
+    border-radius: 50%;
+  }
+  &__radio:checked + &__radio::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 12px;
+    background-color: @red;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-app {
+  padding-top: 0;
+  margin-bottom: 27px;
+
+  }
+  .user-app__feedback {
+    width: 410px;
+  }
+  .user-app__question {
+    line-height: 30px;
+  }
+  .user-app__label {
+    margin-right: 20px;
+  }
+  .user-app__label:first-child {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-app {
+    width: 470px;
+    order: 1;
   }
 }

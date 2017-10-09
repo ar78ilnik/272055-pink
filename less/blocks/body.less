@@ -7,5 +7,15 @@ body {
   color: @blue;
   font-style: normal;
   font-weight: 400;
-  background-color: @white;
+  min-width: 320px;
+  @media (min-width: @tablet-width) {
+      width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
 }
