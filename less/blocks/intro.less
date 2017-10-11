@@ -2,13 +2,12 @@
   width: 170px;
   margin: 0 auto;
   margin-top: 42px;
-  text-align: center;
   &__header {
     font-size: 24px;
     line-height: 30px;
     font-weight: lighter;
     color: @white;
-
+    text-align: center;
   }
 }
 @media (min-width: @tablet-width) {
@@ -20,5 +19,23 @@
     font-size: 50px;
     line-height: 60px;
     font-weight: lighter;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    clear: both;
+    width: 940px;
+  }
+  .intro__header {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 64px;
+    font-weight: lighter;
+  }
+  .intro__header--photo {
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }

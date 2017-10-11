@@ -19,3 +19,25 @@ body {
 img {
   max-width: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-width: 280px;
+	position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    min-width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    min-width: 960px;
+  }
+}

@@ -7,7 +7,7 @@
   margin-left: 0;
   padding-bottom: 28px;
   border-bottom: 1px solid @white;
-  &__size {
+  &__scale {
     position: relative;
     width: 280px;
     box-sizing: border-box;
@@ -24,10 +24,10 @@
     width: 10px;
     height: 10px;
     top: -6px;
+    left: 14px;
     background-color: @white;
     border: 2px solid @red;
     border-radius: 50%;
-    z-index: 10;
     cursor: pointer;
   }
   &__toggle
@@ -39,5 +39,24 @@
   }
   &__toggle-contrast {
     left: 120px;
+  }
+  &__tool--active + .controls .controls__toggle {
+    background-color: @red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+	.controls {
+  	display: block;
+  	position: static;
+  	margin-bottom: 30px;
+  }
+  .controls:nth-of-type {
+    margin-bottom: 27px;
+  }
+  .controls__scale {
+    width: 275px;
+    padding-left: 55px;
+    padding-right: 18px;
   }
 }
