@@ -112,11 +112,14 @@
   }
 }
 
-@media (min-width: desktop-width) {
-  // не подключаются стили футера
-  .page-footer {
-    min-width: 940px;
-  }
+@media (min-width: @desktop-width) {
+	.page-footer {
+		display: flex;
+		flex-direction: row;
+		margin-top: 70px;
+		margin-bottom: 72px;
+		height: 196px;
+	}
   .page-footer__title {
     width: 640px;
     font-size: 50px;
