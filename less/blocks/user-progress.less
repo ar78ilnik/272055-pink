@@ -1,8 +1,10 @@
 .user-progress {
-    box-sizing: border-box;
     padding-top: 35px;
     padding-bottom: 18px;
     order: 3;
+  &__feedback {
+  	padding: 28px 0 30px;
+  }
   &__headline {
     font-size: 14px;
     line-height: 18px;
@@ -39,7 +41,7 @@
   &__input {
     display: none;
   }
-  &__label-checkbox {
+  &__label--checkbox {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -53,6 +55,8 @@
     width: 35px;
     height: 35px;
     margin-right: 30px;
+    border-radius: 2px;
+    background-color: @white;
     border: 2px solid @silver;
   }
   &__input:checked + &__label-checkbox::before {
@@ -94,5 +98,29 @@
   .user-progress {
     width: 940px;
     order: 3;
+  }
+  .user-progress__feedback {
+  	width: auto;
+  	margin: 0;
+  	padding-top: 20px;
+  	padding-bottom: 30px;
+  	padding-right: 0;
+  }
+  .user-progress__list {
+  	display: flex;
+  	flex-wrap: wrap;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	align-content: space-between;
+  }
+  .user-progress__list-item {
+  	width: 257px;
+  	margin-bottom: 23px;
+  }
+  .user-progress__list-item:first-child {
+  	padding-top: 20px;
+  }
+  .user-progress__label--checkbox {
+  	margin-right: 5px;
   }
 }

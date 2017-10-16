@@ -1,0 +1,138 @@
+	.photo-box--wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.photo-box__title {
+		padding-top: 45px;
+		padding-bottom: 50px;
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: lighter;
+		text-align: center;
+	}
+	.photo-box__item {
+  	width: auto;
+	}
+	.photo-box__item-hit {
+		position: relative;
+	}
+	.photo-box__text {
+		width: 100%;
+		padding: 17px;
+	}
+	.photo-box__author {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 700;
+		color: @blue;
+	}
+	.photo-box__time {
+		font-size: 12px;
+		font-weight: lighter;
+		text-transform: uppercase;
+	}
+	.photo-box__phrase {
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.photo-box__count-like {
+		position: relative;
+		padding-left: 30px;
+		font-size: 12px;
+		line-height: 24px;
+		color: @red;
+		text-transform: uppercase;
+	}
+	.photo-box__count-like::before {
+		position: absolute;
+		content: "";
+		width: 13px;
+		height: 12px;
+		left: 5px;
+		top: 4px;
+		background-image: url(../img/icon-heart.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	.photo-box__panorama-sticker {
+		position: absolute;
+		padding: 7px 23px 6px;
+		right: 0;
+		top: 0;
+		font-size: 12px;
+		line-height: 24px;
+		text-transform: uppercase;
+		background-color: @red;
+	}
+@media (min-width: @tablet-width){
+	.photo-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.photo-box--wrapper {
+    width: 620px;
+  }
+	.photo-box__item-hit--wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		min-height: auto;
+		padding-top: 24px;
+		padding-bottom: 15px;
+		flex-direction: row;
+		align-content: flex-start;
+	}
+	.photo-box__item-hit {
+		width: 620px;
+		margin: 0 auto;
+	}
+	.photo-box__title {
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+	}
+  .photo-box__item {
+    flex-basis: 300px;
+  }
+  .photo-box__photo {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-box {
+    width: 940px;
+    align-content: space-between;
+  }
+  .photo-box__title {
+    width: 940px;
+    padding-bottom: 88px;
+    padding-left: 187px;
+    padding-right: 187px;
+  }
+  .photo-box__item-hit {
+    padding-bottom: 50px;
+  }
+  .photo-box__panorama-sticker {
+    top: 54px;
+  }
+  .photo-box__text {
+    width: 940;
+  }
+  .photo-box__author {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .photo-box__item {
+    padding-bottom: 54px;
+  }
+  .photo-box__photo {
+    width: 300px;
+    height: auto;
+  }
+}

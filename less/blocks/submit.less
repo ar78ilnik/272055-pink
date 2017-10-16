@@ -1,0 +1,32 @@
+.submit {
+		display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+  	align-items: center;
+  	text-align: center;
+    min-height: 128px;
+    order: 7;
+  &__button {
+  	width: 100%;
+  	padding: 14px 44px;
+  	font-size: 18px;
+  	line-height: 30px;
+  	font-weight: 700;
+  	color: @white;
+  	background-color: @form-button;
+  	border: 3px solid @form-button;
+  	border-radius: 3px;
+  }
+  &__required {
+  	font-size: 14px;
+  	line-height: 30px;
+  	text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+	.submit {
+		flex-direction: row;
+		min-height: 63px;
+	}
+}

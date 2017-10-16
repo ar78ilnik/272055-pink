@@ -1,24 +1,115 @@
 .intro {
-  width: 170px;
-  margin: 0 auto;
-  margin-top: 42px;
   text-align: center;
-  &__header {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: lighter;
-    color: @white;
-
+&__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
   }
+&__wrapper--index::before {
+  position: absolute;
+  content: "";
+  width: 258px;
+  height: 286px;
+  top: -314px;
+  left: -20px;
+  background-image: url(../img/iphone-hand-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 258px 286px
+}
+}
+.intro:first-child {
+  margin-top: 0;
+}
+.intro:last-child {
+  margin-bottom: 0;
+}
+.intro--index {
+  min-height: 207px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: @blue;
 }
 @media (min-width: @tablet-width) {
   .intro {
-    width: 355px;
-    margin-top: 77px;
+    background-color: transparent;
+  }
+  .intro--index {
+    width: 620px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 555px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url(../img/iphone-hand-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 474px 545px;
+    background-position: 90px 74px;
+  }
+  .intro__wrapper--index {
+    width: 300px;
+    margin-left: 0;
+  }
+  .intro__wrapper--index::before {
+    background-image: none;
+    width: 0;
+    height: 0;
   }
   .intro__header {
+    padding: 0 36px;
+  }
+  .intro__header:first-child {
+    margin-bottom: 31px;
+  }
+  .intro__header--index {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .intro__header--toggle {
+    display: block;
+  }
+  .intro:first-child {
+    margin-top: 0;
+  }
+  .intro__header--index:first-child {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    clear: both;
+    width: 940px;
+  }
+  .intro--index {
+  	width: 940px;
+  	padding-bottom: 123px;
+  	background-image: url("../img/iphone-hand-desktop.png");
+  	background-repeat: no-repeat;
+  	background-size: 564px 645px;
+  	background-position: 300px 110px;
+  }
+  .intro__wrapper--index {
+  	width: 300px;
+  	margin-left: 0;
+  }
+  .intro__header {
+    text-align: center;
     font-size: 50px;
     line-height: 60px;
+    padding-top: 64px;
     font-weight: lighter;
+  }
+  .intro__header--index {
+  	font-size: 50px;
+  	line-height: 60px;
+  	margin-bottom: 52px;
+  }
+  .intro__header--index:first-child {
+  	padding-top: 80px;
+  	margin-bottom: 52px;
+  }
+  .intro__header--photo {
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
