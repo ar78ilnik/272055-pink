@@ -1,22 +1,29 @@
 .slider {
-  position: relative;
-  text-align: center;
   padding-top: 42px;
   padding-bottom: 21px;
+
   &__items {
     position: relative;
+    min-height: 290px;
   }
+
   &__author {
     font-size: 18px;
     line-height: 30px;
     color: @black;
     font-weight: 700;
   }
+
+  &__info {
+    display: none;
+  }
+
   &__paragraph {
     font-size: 14px;
     line-height: 30px;
     color: @blue;
   }
+
   &__item {
     position: absolute;
     top: 0;
@@ -25,15 +32,19 @@
     height: 100%;
     overflow: hidden;
   }
+
   &__input,
   &__toggle {
     display: none;
   }
+
   &__nav {
     position: absolute;
     bottom: 0;
     left: 50%;
+    transform: translateX(-50%);
   }
+
   &__controls {
     display: flex;
     flex-direction: row;
@@ -44,28 +55,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  &__btn {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 0;
-    font-size: 0;
-    width: 6px;
-    height: 6px;
-    margin-right: 20px;
-    background-color: @btn;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  &__btn::before {
-    position: absolute;
-    content: "";
-    width: 6px;
-    height: 6px;
-    top: -2px;
-    left: 0;
-    border: 3px solid @blue;
-    border-radius: 50%;
-  }
+
   &__items-btn {
     display: inline-block;
     vertical-align: middle;
@@ -78,11 +68,19 @@
     cursor: pointer;
     background-color: @btn;
   }
+
   &__switch {
     display: none;
   }
 }
 
+.slider #btn1:checked ~ .slider__slider-item-nikolay,
+.slider #btn2:checked ~ .slider__slider-item-petya,
+.slider #btn3:checked ~ .slider__slider-item-vasya {
+  position: static;
+  padding-bottom: 30px;
+  visibility: visible;
+}
 @media (min-width: @tablet-width) {
   .slider {
     width: 620px;
@@ -91,32 +89,37 @@
     min-height: 290px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .slider {
     width: 940px;
     padding-top: 105px;
     padding-bottom: 8px;
   }
+
   .slider__items {
     position: relative;
   }
+
   .slider__slider-item {
     display: flex;
     flex-direction: column;
   }
+
   .slider__wrapper {
     order: 1;
   }
+
   .slider__author {
     margin-top: 23px;
   }
+
   .slider__info {
     display: block;
     margin-top: 0;
     font-size: 18px;
     line-height: 34px;
   }
+
   .slider__paragraph {
     padding: 0 95px;
   }

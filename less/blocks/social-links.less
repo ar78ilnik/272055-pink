@@ -1,4 +1,7 @@
 .social-links {
+    padding-top: 3px;
+    font-size: 0;
+    margin: 0 auto 36px;
   &__link {
     display: inline-block;
     vertical-align: middle;
@@ -11,5 +14,40 @@
     background-color: @white;
     border: 2px solid @white;
     border-radius: 50%;
+  }
+  &__dev {
+    position: relative;
+  }
+  &__copyright-link {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 42px;
+    color: @blue;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social-links {
+  width: auto;
+  margin-left: 68px;
+  margin-bottom: 0;
+  }
+  .social-links__dev {
+    padding-top: 12px;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+  }
+ .social-links__htmlacademy {
+   position: absolute;
+   right: -15px;
+   top: 8px;
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .social-links {
+    margin-left: 228px;
   }
 }
