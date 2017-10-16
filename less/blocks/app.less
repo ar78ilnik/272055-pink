@@ -1,5 +1,4 @@
 .app {
-  padding-top: 397px;
   &__icon {
     min-height: 207px;
     margin-top: 28px;
@@ -25,7 +24,7 @@
   &__app-button-content {
     width: 280px;
     padding-top: 11px;
-    padding-right: 43px;
+    padding-right: 25px;
     padding-bottom: 11px;
     padding-left: 43px;
     text-decoration: none;
@@ -73,4 +72,14 @@
   .app__icon::before {
     display: none;
   }
+  .app__promo {
+  font-size: 18px;
+  line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+	.app {
+		min-height: 280px;
+	}
 }
