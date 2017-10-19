@@ -11,33 +11,37 @@
 <body>
   <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>-->
   <header class="page-header page-header--photo">
-    <div class="wrapper">
     <nav class="main-nav">
-      <div class="main-nav__logo">
-        <div class="main-nav__main-wrapper">
-          <div class="main-nav__logo">
-            <a class="main-nav__logo-header" href="index.html">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'">
-              </a>
-            <button class="main-nav__toggle"></button>
-          </div>
-          <div class="main-nav__list">
-            <ul class="main-nav__items">
-              <!--<li class="main-nav__item-nav-height"></li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="photo.html">фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">html academy</a>
-              </li>-->
-            </ul>
-          </div>
+      <div class="main-nav__main-wrapper">
+        <div class="main-nav__logo-wrapper">
+          <a class="logo logo--page-header" href="index.html">
+          	<picture>
+          		<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          		<source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
+            	<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="147" height="40">
+            </picture>
+          </a>
+          <!--<button class="main-nav__toggle" type="button">
+            <img class="main-nav__icon-menu-burger" src="img/icon-menu-burger.svg">
+            Открыть список
+          </button>-->
+        </div>
+        <div class="main-nav__wrapper main-nav__wrapper--top"> <!--main-nav__wrapper--closed-->
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--nav-height"></li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Html Academy</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -47,14 +51,14 @@
   </div>
   </header>
   <main class="page-main">
-    <section class="photo-box wrapper">
+    
       <h2 class="photo-box__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-      <div class="photo-box__item-hit wrapper">
+      <div class="photo-box__item-hit">
         <div class="photo-box__panorama-sticker">ПАНОРАМА ДНЯ</div>
         <picture class="photo-box__photo-hit">
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
-          <source media="(min-width: 620px)" srcset="img/panorama-tablet.jpg">
-          <img class="photo-box__photo-hit" src="img/panorama-mobile.jpg" alt="фото">
+          <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="photo-box__photo-hit" src="img/panorama-mobile@1x.jpg" alt="Панорамное фото из кабины канаточной дороги">
         </picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Анна</cite>
@@ -65,9 +69,14 @@
           <div class="photo-box__count-like">нравится:215</div>
         </article>
       </div>
+      <section class="photo-box">
       <div class="photo-box wrapper">
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
+      <picture>
+      	<source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@1x.jpg 1x">
+      	<source media="(min-width: 620px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+        <img class="photo-box__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография автомобиля">
+      </picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Левон</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(5 часов назад)</time>
@@ -78,7 +87,11 @@
         </article>
       </div>
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя">
+        <picture>
+      		<source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+      		<source media="(min-width: 620px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+        	<img class="photo-box__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография барабанной установки">
+      	</picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Антон</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(12 часов назад)</time>
@@ -90,7 +103,11 @@
       </div>
 
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
+        <picture>
+      		<source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+      		<source media="(min-width: 620px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+        	<img class="photo-box__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография стеклянной крыши на фоне неба">
+      	</picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Борис</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(20 часов назад)</time>
@@ -102,7 +119,11 @@
       </div>
 
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя">
+        <picture>
+      		<source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+      		<source media="(min-width: 620px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@1x.jpg 2x">
+        	<img class="photo-box__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография ярмарки сельхоз-продукции">
+      	</picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Сергей</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(25 часов назад)</time>
@@ -114,7 +135,11 @@
       </div>
 
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя">
+        <picture>
+      		<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+      		<source media="(min-width: 620px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+        	<img class="photo-box__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография ног фотографа на фоне спуска с горы">
+      	</picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Максим</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(40 часов назад)</time>
@@ -126,7 +151,11 @@
       </div>
 
       <div class="photo-box__item">
-        <img class="photo-box__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя">
+        <picture>
+      		<source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+      		<source media="(min-width: 620px)" srcset="img/photo-wing-tablet@1x.jpg 1x, mg/photo-wing-tablet@2x.jpg 2x">
+        	<img class="photo-box__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография крыла летящего самолета">
+      	</picture>
         <article class="photo-box__text">
           <cite class="photo-box__author">Надежда</cite>
           <time class="photo-box__time" datetime="2017-03-01T00:10">(45 часов назад)</time>
