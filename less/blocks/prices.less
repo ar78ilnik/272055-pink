@@ -15,6 +15,7 @@
     width: 840px;
     border-collapse: collapse;
     border-spacing: 0;
+    border: 1px solid @border-fieldset;
   }
 
   &__list-head {
@@ -87,7 +88,7 @@
     padding-top: 16px;
     padding-bottom: 15px;
     text-transform: uppercase;
-    border: 2px solid @silver;
+    border: 2px solid @border-fieldset;
     border-top: none;
   }
   &__field-ok::after {
@@ -133,7 +134,7 @@
   .prices__field {
     min-width: 154px;
     min-height: 46px;
-    padding: 7px 15px;
+    padding: 0 15px;
   }
   .prices__field-ok,
   .prices__field-cancel {

@@ -12,11 +12,22 @@
 
 @media (min-width: @tablet-width) {
 	.logo {
-		width: 147px;
+		width: 146px;
 		height: 40px;
 	}
 	.logo--page-header {
 		top: 45px;
+	}
+	.logo-htmlacademy {
+		position: absolute;
+		right: -36px;
+		top: -11px;
+	}
+	.logo-htmlacademy:hover {
+		fill: #d22856;
+	}
+	.logo-htmlacademy {
+		fill: currentColor;
 	}
 }
 
@@ -24,6 +35,6 @@
 	.logo {
 		position: static;
 		float: left;
-		margin-top: 45px;
+		fill: @red;
 	}
 }
