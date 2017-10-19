@@ -8,6 +8,7 @@
     background-color: @blue;
     background-repeat: no-repeat;
     color: @white;
+    min-height: 237px;
   &__wrapper {
     position: relative;
   }
@@ -26,6 +27,11 @@
   }
   .page-header__wrapper--index {
     padding-top: 0;
+  }
+  .page-header--form,
+  .page-header--photo {
+  	min-height: 440px;
+  	background-image: url("../img/bg-back-tablet@1x.jpg");
   }
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   	background-image: url("img/bg-back-tablet@2x.jpg");

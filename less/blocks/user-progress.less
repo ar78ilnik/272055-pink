@@ -3,6 +3,7 @@
     padding-bottom: 18px;
     order: 3;
   &__feedback {
+  	width: 280px;
   	padding: 28px 0 30px;
   }
   &__headline {
@@ -36,19 +37,18 @@
   &__input + &__label{
     position: relative;
     display: block;
-    padding-left: 50px;
   }
   &__input {
     display: none;
   }
-  &__label--checkbox {
+  &__label {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     font-size: 18px;
     line-height: 30px;
   }
-  &__label-checkbox::before {
+  &__label::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -57,7 +57,10 @@
     margin-right: 30px;
     border-radius: 2px;
     background-color: @white;
-    border: 2px solid @silver;
+    border: 2px solid @border-fieldset;
+  }
+  &__label:hover::before {
+  	border: 2px solid @blue;
   }
   &__input:checked + &__label-checkbox::before {
     content: "";
@@ -91,6 +94,9 @@
   }
   .user-progress__headline {
     line-height: 30px;
+  }
+  .user-progress__feedback {
+    width: 620px;
   }
 }
 

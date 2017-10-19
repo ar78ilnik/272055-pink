@@ -1,15 +1,16 @@
 .form {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
   padding-top: 45px;
   padding-bottom: 15px;
   &__text {
     font-size: 14px;
     line-height: 30px;
-    color: @blue;
+    width: 280px;
     text-align: center;
     font-weight: lighter;
-    order: 1;
+    order: 0;
   }
   &__personal-data {
     width: 280px;
@@ -19,11 +20,12 @@
   }
   &__feedback {
     padding: 28px 0 30px;
-    border: 1px solid @border-fieldset;;
+    border: 1px solid @border-fieldset;
     order: 2;
   }
   &__list {
     list-style: none;
+    font-weight: 400;
     margin: 0;
     padding: 0;
   }
@@ -44,7 +46,7 @@
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 14px;
-    border: 2px solid @silver;
+    border: 2px solid @border-fieldset;
     font-size: 18px;
     line-height: 30px;
   }
@@ -60,6 +62,10 @@
 @media (min-width: @tablet-width) {
   .form {
     padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+		width: 940px;
   }
   .form__text {
     font-size: 18px;
@@ -68,13 +74,6 @@
     width: 620px;
     display: flex;
     flex-direction: column;
-  }
-  .form__feedback {
-    width: 620px;
-    padding: 0;
-    margin: 0;
-    order: 0;
-    border: none;
   }
   .form__list-item {
     display: flex;

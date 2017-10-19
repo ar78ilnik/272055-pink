@@ -16,17 +16,38 @@
   	background-color: @form-button;
   	border: 3px solid @form-button;
   	border-radius: 3px;
+  	cursor: pointer;
   }
   &__required {
   	font-size: 14px;
   	line-height: 30px;
   	text-align: center;
+  	order: 8;
   }
 }
 
 @media (min-width: @tablet-width) {
 	.submit {
+		display: flex;
+		flex-direction: row;
+	}
+	.submit__area {
 		flex-direction: row;
 		min-height: 63px;
+	}
+	.submit__button:hover {
+		background-color: @green-btn-form;
+	}
+	.submit__button:down {
+		background-color: @green-btn-form-down;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.submit {
+		width: 940px;
+		margin: 0 auto;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
