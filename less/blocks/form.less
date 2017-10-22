@@ -10,7 +10,6 @@
     width: 280px;
     text-align: center;
     font-weight: lighter;
-    order: 0;
   }
   &__personal-data {
     width: 280px;
@@ -50,6 +49,9 @@
     font-size: 18px;
     line-height: 30px;
   }
+  &__input:hover {
+  	border: 2px solid @blue;
+  }
   &__required {
     text-align: center;
     font-size: 14px;
@@ -63,15 +65,17 @@
   .form {
     padding-top: 90px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-		width: 940px;
+    flex-direction: column;
+		width: 620px;
   }
   .form__text {
+  	width: 490px;
+  	margin: 0 auto;
     font-size: 18px;
   }
   .form__personal-data {
     width: 620px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }

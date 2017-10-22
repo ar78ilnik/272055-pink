@@ -2,52 +2,34 @@
   min-height: 66px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-&__wrapper {
-  width: 100%;
-}
-&__logo-wrapper {
-	width: 280px;
-	margin: 0 auto;
-	position: relative;
-}
-&__wrapper--top {
-  position: absolute;
-}
-&__wrapper--closed {
-	display: none;
-	}
-&__toggle {
-  display: block;
-  position: absolute;
-  width: 200px;
-  min-height: 66px;
-  top: 0;
-  right: -80px;
-  font-size: 0;
-  line-height: 0;
-  background-color: transparent;
-  border: none;
+  &__wrapper {
+  	width: 87.5%;
+  	height: 66px;
+  	margin: 0 auto;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  &__toggle {
+  	width: 50px;
+  	height: 24px;
+  	font-size: 0;
+  	background-color: transparent;
+  	background-image: url("../img/icon-menu-burger.svg");
+  	border: none;
   }
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  &__wrapper--closed &__list {
     display: none;
   }
   &__item {
-    text-align: center;
     background-color: @blue;
-    border-bottom: 1px solid @border-bottom;
-    border-top: 1px solid @border-top;
+    position: relative;
   }
   &__link {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    padding-top: 18px;
-    padding-bottom: 18px;
     font-size: 18px;
     line-height: 32px;
     font-weight: 700;
@@ -56,78 +38,75 @@
     color: @white;
   }
 }
-.main-nav__item--active .main-nav__link::after, .main-nav__item:hover .main-nav__link::after {
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    height: 110px;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+  	width: 620px;
+  	padding-top: 44px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  }
+  .main-nav__logo-image {
+  	width: 147px;
+  	height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  	.main-nav__wrapper,
+  	.main-nav__wrapper-top {
+  		width: 940px;
+  	}
+  	.main-nav__wrapper {
+  	max-width: 940px;
+  	margin: 0 auto;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  .main-nav__list {
+  	min-width: 66%;
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  .main-nav__item {
+    overflow: hidden;
+    background-color: transparent;
+    width: 20.8%;
+    height: 110px;
+    text-align: center;
+  }
+  .main-nav__link {
+  	display: block;
+  	font-weight: 400;
+  	text-transform: none;
+  	padding-top: 35%;
+  	padding-bottom: 35%;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__item--active .main-nav__link::after, .main-nav__item:hover .main-nav__link::after {
     content: "";
     position: absolute;
     height: 2px;
     top: 80px;
-    left: 82px;
+    left: 0;
     right: 0;
     background-color: #fff;
     transition: .2s
   }
   .main-nav__item--active .main-nav__link::after {
-    background-color: #d22856;
+    background-color: @red;
     transition: .1s
-  }
-@media (min-width: @tablet-width) {
-  .main-nav {
-    min-height: 110px;
-    margin: 0;
-  }
-  .main-nav__logo-wrapper {
-  	width: 620px;
-  }
-  .main-nav__toggle {
-  	min-height: 110px;
-  }
-  .main-nav__wrapper {
-  	width: 100%;
-  	top: 0;
-  }
-	.main-nav__icon-menu-burger {
-		top: 45px;
-	}
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav {
-		position: static;
-  }
-  .main-nav__main-wrapper {
-  	width: 960px;
-  	margin: 0 auto;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: flex-start;
-  	align-items: center;
-  	
-  }
-  .main-nav__logo-wrapper {
-  	width: 960px;
-  }
-  .main-nav__wrapper {
-  	position: static;
-  	float: right;
-  	min-width: 72.66%;
-  	text-align: right;
-  }
-  .main-nav__list {
-  	display: flex;
-  	flex-direction: row;
-  	flex-wrap: wrap;
-  	flex-grow: 1;
-  	justify-content: flex-end;
-  	align-items: center;	
-  }
-  .main-nav__item {
-    overflow: hidden;
-    background-color: transparent;
-  }
-  .main-nav__link {
-  	padding-left: 82px;
-  	padding-top: 40px;
-  	font-weight: 400;
-  	text-transform: none;
   }
 }

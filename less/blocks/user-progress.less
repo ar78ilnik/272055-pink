@@ -47,6 +47,7 @@
     position: relative;
     font-size: 18px;
     line-height: 30px;
+    margin-right: 30px;
   }
   &__label::before {
     content: "";
@@ -61,11 +62,12 @@
   }
   &__label:hover::before {
   	border: 2px solid @blue;
+  	
   }
-  &__input:checked + &__label-checkbox::before {
+  &__input:checked + &__label--checkbox::before {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 0;
     width: 38px;
     height: 38px;
@@ -73,7 +75,7 @@
     background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
   }
-  .checkbox:checked + .label-checkbox .icon-yes {
+  .checkbox:checked + .label--checkbox .icon-yes {
     position: absolute;
     display: block;
     top: 9px;
@@ -89,14 +91,18 @@
     padding-bottom: 50px;
     padding-left: 57px;
     padding-right: 57px;
-    order: 2;
+    order: 3;
     //не меняется order когда изменяется на планшетный режим
   }
   .user-progress__headline {
     line-height: 30px;
   }
   .user-progress__feedback {
-    width: 620px;
+    width: 100%;
+  }
+  .user-progress__label {
+  	margin-left: 60px;
+  	position: relative;
   }
 }
 
@@ -125,6 +131,9 @@
   }
   .user-progress__list-item:first-child {
   	padding-top: 20px;
+  }
+  .user-progress__label {
+  	margin-left: 0;
   }
   .user-progress__label--checkbox {
   	margin-right: 5px;

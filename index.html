@@ -8,26 +8,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="body">
+
   <header class="page-header page-header--index">
     <nav class="main-nav">
-      <div class="main-nav__main-wrapper">
-        <div class="main-nav__logo-wrapper">
+    <div class="main-nav__wrapper">
           <a class="logo logo--page-header" href="index.html">
           	<picture>
           		<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
           		<source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
-            	<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="147" height="40">
+            	<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="74" height="23">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
-            <img class="main-nav__icon-menu-burger" src="img/icon-menu-burger.svg">
             Открыть список
           </button>
-        </div>
-        <div class="main-nav__wrapper main-nav__wrapper--top main-nav__wrapper--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--nav-height"></li>
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="#">Главная</a>
             </li>
@@ -41,22 +37,21 @@
               <a class="main-nav__link" href="#">Html Academy</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="page-header__wrapper page-header__wrapper--main page-header__wrapper--index">
-      <section class="intro intro--index">
-        <div class="intro__wrapper intro__wrapper--index">
-          <h1 class="intro__header intro__header--index intro__header--toggle">Взгляните на жизнь иначе!</h1>
-          <div class="app">
+          </div>
+    	</nav>
+    	<div class="app__wrapper">
+    	<div class="app">
+          <h1 class="app__slogan">Взгляните на жизнь иначе!</h1>
+          <div class="app__box">
             <a class="app__app-button-content" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <div class="app__down-box">
             <a class="app__itunes" href="https://www.apple.com/ru/itunes/"><img src="img/logo-apple.svg"></a>
             <a class="app__android" href="https://play.google.com/store"><img src="img/logo-android.svg"></a>
             <a class="app__win" href="https://www.microsoft.com/ru-RU/store/apps"><img src="img/logo-microsoft.svg"></a>
+            </div>
             <p class="app__promo">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </div>
-      </section>
+    	</div>
     </div>
   </header>
 
@@ -90,9 +85,11 @@
         </div>
       </div>
       	<article class="promo__britn">
-        	<h2 class="promo__slogan">Эффект на 24 часа!</h2>
-        	<p class="promo__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        	<a class="promo__link" href="#">Узнать больше об исследовании</a>
+      		<div class="promo__britn--visual">
+        		<h2 class="promo__slogan">Эффект на 24 часа!</h2>
+        		<p class="promo__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        		<a class="promo__link" href="#">Узнать больше об исследовании</a>
+        	</div>
       	</article>
       <section class="slider wrapper">
         <!--<Блок со слайдами-->
@@ -127,73 +124,118 @@
           </div>
         </div>
       </section>
-      <div class="prices">
-        <div class="prices__items">
-          <table class="prices__list">
-            <thead class="prices__list-head">
-              <tr>
-                <th class="prices__value prices__value-empty"></th>
-                <th class="prices__value">База
-                  <p class="prices__value-price">1,99 USD</p>
-                </th>
-                <th class="prices__value prices__value-red">Стандарт
-                  <p class="prices__value-price">3,99 USD</p>
-                </th>
-                <th class="prices__value">Анлим
-                  <p class="prices__value-price">9,99 USD</p>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="prices__list-body">
-              <tr>
-                <td class="prices__field prices__field-empty">Розовый фильтр</td>
-                <td class="prices__field prices__field-ok">Розовый фильтр</td>
-                <td class="prices__field prices__field-ok">Розовый фильтр</td>
-                <td class="prices__field prices__field-ok">Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td class="prices__field prices__field-empty">Смайлики</td>
-                <td class="prices__field prices__field-cancel">Смайлики</td>
-                <td class="prices__field prices__field-ok">Смайлики</td>
-                <td class="prices__field prices__field-ok">Смайлики</td>
-              </tr>
-              <tr>
-                <td class="prices__field prices__field-empty">Комментарии</td>
-                <td class="prices__field prices__field-cancel">Комментарии</td>
-                <td class="prices__field prices__field-cancel">Комментарии</td>
-                <td class="prices__field prices__field-ok">Комментарии</td>
-              </tr>
-            </tbody>
-          </table>
-          <input id="radio1" class="prices__switch" name="price" type="radio">
-          <input id="radio2" class="prices__switch" name="price" type="radio" checked="">
-          <input id="radio3" class="prices__switch" name="price" type="radio">
-        </div>
-      </div>
+      <div class="price shade--line">
+  <div class="price__wrap">
+    <table class="price__table">
+      <tbody><tr>
+        <td></td>
+        <td class="price__td--head price__td--border-left">
+          <h2 class="price__col-title">База</h2>
+          <div class="price__col-text">1,99 USD</div>
+        </td>
+        <td class="price__td--head price__td--border-grey">
+          <a class="price__label--hit" href="#">Хит</a>
+          <h2 class="price__col-title">Стандарт</h2>
+          <div class="price__col-text">3,99 USD</div>
+        </td>
+        <td class="price__td--head price__td--border-right">
+          <h2 class="price__col-title">Анлим</h2>
+          <div class="price__col-text">9,99 USD</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="price__td">Розовый фильтр</td>
+        <td class="price__td price__td--border-blue">Розовый фильтр
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td price__td--border-blue">Розовый фильтр
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td price__td--border-blue">Розовый фильтр
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td class="price__td">Смайлики</td>
+        <td class="price__td">Смайлики
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td">Смайлики
+          <svg class="yes" viewBox="0 0 26.752 26.752" width="100%" height="100%">
+            <path d="m15.497 13.376l10.815-10.814c0.586-0.585 0.586-1.535 0-2.121s-1.535-0.586-2.121 0l-10.815 10.814-10.814-10.816c-0.586-0.586-1.535-0.586-2.121 0-0.586 0.585-0.586 1.535 0 2.121l10.814 10.815-10.816 10.815c-0.586 0.586-0.586 1.535 0 2.121 0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l10.815-10.814 10.814 10.815c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439c0.586-0.586 0.586-1.535 0-2.121l-10.815-10.815z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td">Смайлики
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td class="price__td">Комментарии</td>
+        <td class="price__td">Комментарии
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td">Комментарии
+          <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+        <td class="price__td">Комментарии
+         <svg class="no" viewBox="0 0 30.375 21.688" width="100%" height="100%">
+            <path d="m29.936 0.439c-0.586-0.586-1.535-0.586-2.121 0l-17.627 17.627-7.627-7.627c-0.586-0.586-1.535-0.586-2.121 0s-0.586 1.535 0 2.121l8.688 8.688c0.293 0.293 0.677 0.439 1.061 0.439s0.768-0.146 1.061-0.439l18.686-18.687c0.585-0.586 0.585-1.536 0-2.122z">
+            </path>
+          </svg>
+        </td>
+      </tr>
+    </tbody></table>
+    <div class="price__pagination">
+      <i class=""></i>
+      <i class="price__pagination-active"></i>
+      <i></i>
     </div>
+  </div>
+
+    
   </main>
   <footer class="page-footer">
   <div class="page-footer__wrapper">
     <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+    <div class="page-footer__visual">
     <div class="page-footer__call">
       <span class="page-footer__content">Звоните:<br></span>
       <a class="page-footer__tlf" href="callto:+7(812)555-66-66">+7(812)555-66-66</a>
     </div>
     <div class="page-footer__write">
-      <span class="page-footer__content">Пишите:</span>
+      <span class="page-footer__content">Пишите:<br></span>
       <a class="page-footer__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </div>
     <address class="page-footer__visit">
-    	<span class="page-footer__content">Приезжайте в гости:</span>
+    	<span class="page-footer__content">Приезжайте в гости:<br></span>
     	<p class="page-footer__address">ул. Большая<br>Конюшенная,19/8</p>
   	</address>
+  	</div>
   </div>
   <div class="page-footer__triangle">
-  	<svg id="bg-triangle-white-footer" class="page-foter__bg-triangle-white-footer" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595px" viewBox="0 0 595 61" enable-background="new 0 0 595 61" xml:space="preserve">
-   	<polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "></polygon>
-   	</svg>
-    <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.32089461630908!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506336716158"
-      width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
   </div>
   <section class="page-footer__copyright--wrapper page-footer__copyright--hide">
   	<a class="logo logo--big logo-copyright" href="index.html">
@@ -223,7 +265,7 @@
   </section>
 
   </footer>
-  <script src="js/toogle.js"></script>
+  <script src="js/price.js"></script>
 </body>
 
 </html>

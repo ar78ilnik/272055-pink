@@ -4,20 +4,13 @@
 	font-size: 0;
 }
 
-.logo--page-header {
-	position: absolute;
-	top: 12px;
-	left: 0;
-}
-
 @media (min-width: @tablet-width) {
 	.logo {
+		display: block;
 		width: 146px;
-		height: 40px;
+		height: auto;
 	}
-	.logo--page-header {
-		top: 45px;
-	}
+
 	.logo-htmlacademy {
 		position: absolute;
 		right: -36px;
@@ -33,8 +26,9 @@
 
 @media (min-width: @desktop-width) {
 	.logo {
-		position: static;
-		float: left;
-		fill: @red;
+		margin-left: 27px;
+	}
+	.logo--page-header {
+		padding-top: -8px;
 	}
 }

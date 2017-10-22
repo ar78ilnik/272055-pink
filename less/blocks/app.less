@@ -1,39 +1,43 @@
 .app {
-  &__icon {
-    min-height: 207px;
-    margin-top: 28px;
-    padding-top: 28px;
-    margin-bottom: 34px;
-  }
-  &__icon::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/iphone-hand-mobile@1x.png");
+	&__wrapper {
+		width: 280px;
+		padding-top: 460px;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__wrapper::after {
+		position: absolute;
+		content: "";
+    background-image: url("../img/iphone-hand-mobile.png");
     background-repeat: no-repeat;
-    background-size: 258 286;
+    background-size: 258px auto;
     width: 258px;
     height: 286px;
-    top: 185px;
-    left: 10;
-  }
-  &__app-button {
-    display: block;
+    top: 110px;
+    left: 20px;
+	}
+	&__slogan {
+		display: none;
+	}
+  &__app-button-content {
+  	box-sizin: content-box;
     width: 280px;
     margin: 0 auto;
-  }
-  &__app-button-content {
-    width: 280px;
-    padding-top: 11px;
-    padding-right: 25px;
-    padding-bottom: 11px;
-    padding-left: 43px;
+    padding: 4.33% 15%;
+    padding-bottom: 20px;
     text-decoration: none;
     border: 3px solid @white;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 18px;
     color: @white;
     font-weight: 700;
+  }
+  &__down-box {
+  	margin-top: 45px;
+  }
+  &__promo {
+  	padding-top: 26px;
   }
   &__android,
   &__itunes,
@@ -63,14 +67,27 @@
 }
 
 @media (min-width: @tablet-width) {
-  .app {
+  .app__wrapper {
   padding-top: 0;
-  width: 300px;
-  height: 352px;
-  margin-top: 35px;
+  width: 620px;
+  height: 620px;
   }
-  .app__icon::before {
-    display: none;
+  .app__wrapper::after {
+  	position: absolute;
+		content: "";
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 700px 545px;
+    width: 700px;
+    height: 545px;
+    top: 75px;
+    left: -25px;
+  }
+  .app {
+    width: 300px;
+  }
+  .app__box {
+  	padding-top: 300px;
   }
   .app__promo {
   font-size: 18px;
@@ -79,7 +96,32 @@
 }
 
 @media (min-width: @desktop-width) {
-	.app {
-		min-height: 280px;
+	.app__wrapper {
+		width: 940px;
+		margin: 0 auto;
 	}
+	.app {
+		padding-top: 75px;
+	}
+	.app__slogan {
+		display: inline-block;
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: lighter;
+		text-align: center;
+	}
+	.app__box {
+		padding-top: 0;
+	}
+	.app__wrapper::after {
+  	position: absolute;
+		content: "";
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    width: 1050px;
+    height: 645px;
+    top: 98px;
+    left: 28px;
+  }
 }

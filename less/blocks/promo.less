@@ -38,7 +38,7 @@
     padding-top: 50px;
   }
   .promo__text {
-    margin: 0 0 28px;
+    margin: 0 0 -11px;
     font-size: 40px;
     line-height: 48px;
     font-weight: lighter;
@@ -103,18 +103,32 @@
   .promo__britn::after {
   	position: absolute;
   	content: "24";
-  	font-size: 96px;
+  	font-size: 120px;
   	line-height: 96px;
   	font-weight: 700;
   	color: @red;
-  	top: 205px;
-  	left: 75px;
+  	top: 159px;
+  	left: 98px;
   }
   .promo__slogan {
     width: 170px;
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 10px;
+  }
+  .promo__britn {
+    display: block;
+    width: 940px;
+    position: relative;
+    min-height: 183px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-left: 315px;
+    padding-bottom: 110px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 27px 155px, 10px 100px;
+    background-size: 204px 204px, 241px 278px;
   }
   .promo__content {
     font-size: 14px;
@@ -127,6 +141,13 @@
     line-height: 24px;
     color: @red;
   }
+  .promo__britn::after {
+  	top: 199px;
+  	left: 62px;
+  }
+  .promo__britn--visual {
+  	width: 50%;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -135,6 +156,10 @@
     font-size: 50px;
     line-height: 60px;
     font-weight: lighter;
+    margin-top: 18px;
+  }
+  .promo__text-offer {
+  	margin-top: 10px;
   }
   .promo__items {
     padding: 0;
@@ -149,20 +174,20 @@
   .promo__title {
     font-size: 30px;
     line-height: 30px;
-    margin-top: 100px;
+    margin-top: 58px;
     margin-bottom: 24px;
   }
   .promo__paragraph {
     font-size: 18px;
     line-height: 30px;
-    padding-top: 12px;
+    padding-top: 0;
     padding-left: 32px;
     padding-right: 32px;
   }
   .promo__happy {
-    margin-top: 12px;
+    margin-top: 30px;
     flex-basis: 300px;
-    margin-left: 0;
+    margin-left: 12px;
     text-align: center;
   }
   .promo__images {
@@ -208,8 +233,8 @@
   .promo__britn {
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-position: 27px 155px, 10px 99px;
-    background-size: 204px 204px, 241px 278px;
+    background-position: 39px 87px, 11px 18px;
+    background-size: 257px 253px, 315px 344px;
   }
   .promo__content {
     width: 580px;
@@ -224,5 +249,9 @@
   .promo__link {
     font-size: 18px;
     line-height: 30px;
+  }
+  .promo__britn--visual {
+  	width: 60.64%;
+  	padding-left: 11.45%;
   }
 }

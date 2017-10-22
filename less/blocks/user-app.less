@@ -1,4 +1,5 @@
 .user-app {
+	width: 280px;
   min-height: 338px;
   padding-top: 36px;
   margin-bottom: 60px;
@@ -53,8 +54,11 @@
     border: 2px solid @silver;
     border-radius: 50%;
   }
-  &__radio + &__radio:active::after,
-  &__radio:checked + &__radio::after {
+  &__label:hover::before {
+  	border: 2px solid @blue;
+  }
+  &__radio + &__label:active::after,
+  &__radio:checked + &__label::after {
     content: "";
     display: block;
     position: absolute;
@@ -69,12 +73,15 @@
 
 @media (min-width: @tablet-width) {
   .user-app {
+  width: 620px;
+  margin: 0 auto;
   padding-top: 0;
   margin-bottom: 27px;
-	order: 0;
+  order: 1;
   }
   .user-app__feedback {
-    width: 410px;
+    width: 100%;
+    margin-left: 9.68%;
   }
   .user-app__question {
     line-height: 30px;

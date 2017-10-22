@@ -1,12 +1,10 @@
 .social-links {
     padding-top: 3px;
     font-size: 0;
-    margin: 0 auto 36px;
   &__link {
     display: inline-block;
-    vertical-align: middle;
     position: relative;
-    margin: 0 6px;
+    margin: 0 4px;
     font-size: 0;
     line-height: 0;
     width: 47px;
@@ -24,6 +22,11 @@
     padding-right: 42px;
     color: @blue;
     text-decoration: none;
+  }
+  &__logo-htmlacademy {
+  	position: absolute;
+  	top: -5px;
+  	left: 87px;
   }
 }
 
@@ -49,5 +52,13 @@
 }
 
 @media (min-width: @desktop-width) {
-
+	.social-links {
+		width: 30.28%;
+	}
+	.social-links__link {
+		width: 54px;
+	}
+	.social-links__link:hover {
+		border: 2px solid @blue;
+	}
 }

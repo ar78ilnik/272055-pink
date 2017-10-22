@@ -26,7 +26,16 @@
   	border: 2px solid @blue;
   }
 }
-
+@media (min-width: @tablet-width) {
+	.user-message {
+		width: 620px;
+		margin: 0 auto;
+	}
+	.user-message__area {
+		width: 495px;
+		margin: 0 auto;
+	}
+}
 @media (min-width: @desktop-width) {
   .user-message {
     width: 820px;
