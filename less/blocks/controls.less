@@ -23,14 +23,14 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    top: -6px;
-    left: 14px;
+    top: -4px;
+    left: 104px;
     background-color: @white;
     border: 2px solid @red;
     border-radius: 50%;
     cursor: pointer;
   }
-  &__toggle
+
   &__toggle-crop {
     left: 55px;
   }
@@ -59,4 +59,16 @@
     padding-left: 55px;
     padding-right: 18px;
   }
+}
+
+@media (min-width: @desktop-width) {
+	.controls__toggle--crop {
+		left: 104px;
+	}
+	.controls__toggle--fill {
+		left: 215px;
+	}
+	.controls__toggle--contrast {
+		left: 175px;
+	}
 }

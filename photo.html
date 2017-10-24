@@ -7,40 +7,54 @@
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-
+<svg style="display:none">
+  <symbol id="icon-editor-crop" class="publication__crop" width="48px" height="48px" viewBox="0 0 48 48">
+    <path fill="none" d="M0,0h48v48H0V0z"/>
+  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+	</symbol>
+	<symbol id="icon-editor-contrast" class="class-icon-editor-contrast" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92">
+		<path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+  	<path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+	</symbol>
+	<symbol id="icon-editor-fill" class="class-icon-editor-fill" width="48px" height="48px" viewBox="0 0 48 48">
+		<path fill="none" d="M0,0h48v48H0V0z"/>
+  	<path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+  	<rect y="40" width="48" height="3"/>
+	</symbol>
+</svg>
 <body>
   <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>-->
   <header class="page-header page-header--photo">
     <nav class="main-nav">
-    <div class="main-nav__wrapper">
-          <a class="logo logo--page-header" href="index.html">
-          	<picture>
-          		<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          		<source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
-            	<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="74" height="23">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">
+      <div class="main-nav__wrapper">
+        <a class="logo logo--page-header" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="74" height="23">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button">
             Открыть список
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html Academy</a>
-            </li>
-          </ul>
-          </div>
-    	</nav>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="intro__wrapper">
-    	<h1 class="intro__header">Фотографии пользователей</h1>
+      <h1 class="intro__header">Фотографии пользователей</h1>
     </div>
   </header>
   <main class="page-main page-main--photo">
@@ -64,179 +78,185 @@
       </div>
 
       <div class="photo-box wrapper">
-      <div class="photo-box__item">
-      <picture>
-      	<source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@1x.jpg 1x">
-      	<source media="(min-width: 620px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-        <img class="photo-box__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография автомобиля">
-      </picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Левон</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(5 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </blockquote>
-          <div class="photo-box__count-like">нравится:356</div>
-        </article>
-      </div>
-      <div class="photo-box__item">
-        <picture>
-      		<source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-      		<source media="(min-width: 620px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-        	<img class="photo-box__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография барабанной установки">
-      	</picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Антон</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(12 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Соседи будут рады!
-          </blockquote>
-          <div class="photo-box__count-like">нравится:666</div>
-        </article>
-      </div>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография автомобиля">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Левон</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(5 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </blockquote>
+            <div class="photo-box__count-like">нравится:356</div>
+          </article>
+        </div>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография барабанной установки">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Антон</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(12 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Соседи будут рады!
+            </blockquote>
+            <div class="photo-box__count-like">нравится:666</div>
+          </article>
+        </div>
 
-      <div class="photo-box__item">
-        <picture>
-      		<source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-      		<source media="(min-width: 620px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-        	<img class="photo-box__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография стеклянной крыши на фоне неба">
-      	</picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Борис</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(20 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Здесь могла быть ваша цитата о высоком и вечномю
-          </blockquote>
-          <div class="photo-box__count-like">нравится:215</div>
-        </article>
-      </div>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография стеклянной крыши на фоне неба">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Борис</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(20 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Здесь могла быть ваша цитата о высоком и вечномю
+            </blockquote>
+            <div class="photo-box__count-like">нравится:215</div>
+          </article>
+        </div>
 
-      <div class="photo-box__item">
-        <picture>
-      		<source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-      		<source media="(min-width: 620px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@1x.jpg 2x">
-        	<img class="photo-box__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография ярмарки сельхоз-продукции">
-      	</picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Сергей</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(25 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Самая кубанская в мире!
-          </blockquote>
-          <div class="photo-box__count-like">нравится:4</div>
-        </article>
-      </div>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@1x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография ярмарки сельхоз-продукции">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Сергей</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(25 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Самая кубанская в мире!
+            </blockquote>
+            <div class="photo-box__count-like">нравится:4</div>
+          </article>
+        </div>
 
-      <div class="photo-box__item">
-        <picture>
-      		<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-      		<source media="(min-width: 620px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-        	<img class="photo-box__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография ног фотографа на фоне спуска с горы">
-      	</picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Максим</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(40 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Где снег-то?
-          </blockquote>
-          <div class="photo-box__count-like">нравится:150</div>
-        </article>
-      </div>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография ног фотографа на фоне спуска с горы">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Максим</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(40 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Где снег-то?
+            </blockquote>
+            <div class="photo-box__count-like">нравится:150</div>
+          </article>
+        </div>
 
-      <div class="photo-box__item">
-        <picture>
-      		<source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-      		<source media="(min-width: 620px)" srcset="img/photo-wing-tablet@1x.jpg 1x, mg/photo-wing-tablet@2x.jpg 2x">
-        	<img class="photo-box__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография крыла летящего самолета">
-      	</picture>
-        <article class="photo-box__text">
-          <cite class="photo-box__author">Надежда</cite>
-          <time class="photo-box__time" datetime="2017-03-01T00:10">(45 часов назад)</time>
-          <blockquote class="photo-box__phrase">
-            Всем GM и взаимные лайки!
-          </blockquote>
-          <div class="photo-box__count-like">нравится:2560</div>
-        </article>
+        <div class="photo-box__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 620px)" srcset="img/photo-wing-tablet@1x.jpg 1x, mg/photo-wing-tablet@2x.jpg 2x">
+            <img class="photo-box__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография крыла летящего самолета">
+          </picture>
+          <article class="photo-box__text">
+            <cite class="photo-box__author">Надежда</cite>
+            <time class="photo-box__time" datetime="2017-03-01T00:10">(45 часов назад)</time>
+            <blockquote class="photo-box__phrase">
+              Всем GM и взаимные лайки!
+            </blockquote>
+            <div class="photo-box__count-like">нравится:2560</div>
+          </article>
+        </div>
       </div>
-    </div>
     </section>
 
     <section class="publication__wrapper">
       <div class="publication__heading">
         <h2 class="publication__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</h2>
       </div>
-    <form class="publication__form wrapper" action="echo" method="post">
-      <div class="publication__form-box">
-        <img class="publication__image" src="img/photo-road-mobile@1x.jpg">
-      </div>
-      <div class="publication__tools">
-        <dl class="publication__tools-list">
-          <dt class="publication__tool publication__tool--crop">
-            <svg class="crop" width="48" height="48">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-editor-fill.svg"></use>
-            </svg>
-          </dt>
-          <dd class="controls controls--size">
-            <div class="controls__scale">
-              <div class="controls__bar"></div>
-              <div class="controls__toggle controls__toggle--fill"></div>
-            </div>
-          </dd>
-          <dt class="publication__tool publication__tool--active">
+      <form class="publication__form" action="echo" method="post">
+        <div class="publication__form-box">
+          <img class="publication__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография зимней дороги в лесу">
+        </div>
+        <div class="publication__tools">
+          <dl class="publication__tools-list">
+
+            <dt class="publication__tool publication__tool--crop">
+            	<svg class="crop" width="32" height="32">
+            	  <use xlink:href="#icon-editor-crop"></use>
+            	</svg>
+          	</dt>
+            <dd class="controls controls--size">
+              <div class="controls__scale">
+                <div class="controls__bar"></div>
+                <div class="controls__toggle controls__toggle--crop"></div>
+              </div>
+            </dd>
+
+            <dt class="publication__tool publication__tool--fill">
             <svg class="fill" width="48" height="48">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-editor-fill.svg"></use>
+              <use xlink:href="#icon-editor-fill"></use>
             </svg>
           </dt>
-          <dd class="controls controls--size">
-            <div class="controls__scale">
-              <div class="controls__bar"></div>
-              <div class="controls__toggle controls__toggle--fill"></div>
-            </div>
-          </dd>
-          <dt class="publication__tool publication__tool--contrast">
+            <dd class="controls controls--size">
+              <div class="controls__scale">
+                <div class="controls__bar"></div>
+                <div class="controls__toggle controls__toggle--fill"></div>
+              </div>
+            </dd>
+
+            <dt class="publication__tool publication__tool--contrast">
             <svg class="contrast" width="48" height="48">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-editor-fill.svg"></use>
+              <use xlink:href="#icon-editor-contrast"></use>
             </svg>
           </dt>
-          <dd class="controls controls--size">
-            <div class="controls__scale">
-              <div class="controls__bar"></div>
-              <div class="controls__toggle controls__toggle--fill"></div>
-            </div>
-          </dd>
-        </dl>
-        <input class="publication__button publication__button--submit" type="submit" value="Запостить">
-        <input class="publication__button publication__button--reset" type="reset" value="Отмена">
-      </div>
-    </form>
+            <dd class="controls controls--size">
+              <div class="controls__scale">
+                <div class="controls__bar"></div>
+                <div class="controls__toggle controls__toggle--contrast"></div>
+              </div>
+            </dd>
+
+          </dl>
+          <div class="publication__button-down">
+            <input class="publication__button publication__button--submit" type="submit" value="Запостить">
+            <input class="publication__button publication__button--reset" type="reset" value="Отмена">
+          </div>
+        </div>
+      </form>
     </section>
 
   </main>
   <footer class="page-footer__wrapper page-footer--photo">
     <section class="page-footer__copyright page-footer__copyright--no-index">
-    <a class="page-footer__logo">
+      <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Интернет-магазин 'Pink'">
       </a>
-    <section class="social-links">
-      <a class="social-links__link social-links__link-tw" href="https://twitter.com/">
+      <section class="social-links">
+        <a class="social-links__link social-links__link-tw" href="https://twitter.com/">
             <img class="social-icon social-icon__tw" src="img/icon-twitter.svg">
             Twitter
           </a>
-      <a class="social-links__link social-links__link-fb" href="https://ru-ru.facebook.com/">
+        <a class="social-links__link social-links__link-fb" href="https://ru-ru.facebook.com/">
             <img class="social-icon social-icon__fb" src="img/icon-facebook.svg">
             Facebook
           </a>
-      <a class="social-links__link social-links__link-you" href="https://www.youtube.com/">
+        <a class="social-links__link social-links__link-you" href="https://www.youtube.com/">
             <img class="social-icon social-icon__you" src="img/icon-youtube.svg">
             Youtube</a>
-    </section>
-    <section class="social-links__dev">
-      <a class="social-links__copyright-link" href="https://htmlacademy.ru">
+      </section>
+      <section class="social-links__dev">
+        <a class="social-links__copyright-link" href="https://htmlacademy.ru">
           Разработано
         </a>
-      <img class="social-links__logo-htmlacademy" src="img/htmlacademy.svg" width="42" height="49">
+        <img class="social-links__logo-htmlacademy" src="img/htmlacademy.svg" width="42" height="49">
+      </section>
     </section>
-  </section>
   </footer>
 </body>
 

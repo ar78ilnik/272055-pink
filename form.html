@@ -10,106 +10,105 @@
 <header class="page-header page-header--form">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-          <a class="logo logo--page-header" href="index.html">
-          	<picture>
-          		<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          		<source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
-            	<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="74" height="23">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">
+      <a class="logo logo--page-header" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 620px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Интернет-магазин 'Pink'" width="74" height="23">
+        </picture>
+      </a>
+      <button class="main-nav__toggle" type="button">
             Открыть список
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html Academy</a>
-            </li>
-          </ul>
-          </div>
-    	</nav>
-  	<div class="intro__wrapper">
-    	<h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Html Academy</a>
+        </li>
+      </ul>
     </div>
-</div>
+  </nav>
+  <div class="intro__wrapper">
+    <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
 </header>
 <main class="page-main">
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-  		<p class="form__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-      <section class="form__personal-data">
-        <fieldset class="form__feedback">
-          <ul class="form__list">
-            <li class="form__list-item">
-              <label class="form__label" for="family-field"> фамилия:</label>
-              <input type="text" name="family" id="family-field" class="form__input" placeholder="Введите Ваше имя *" required>
-            </li>
-            <li class="form__list-item">
-              <label class="form__label" for="name-field"> имя:</label>
-              <input type="text" name="name" id="name-field" class="form__input" placeholder="Укажите фамилию *" required>
-            </li>
-            <li class="form__list-item">
-              <label class="form__label" for="secondName-field"> отчество:</label>
-              <input type="text" name="secondName" id="secondName-field" class="form__input" placeholder="Ну и отчество тоже">
-            </li>
-            </ul>
-          </fieldset>
-      </section>
-      <section class="user-progress">
-        <fieldset class="user-progress__feedback">
+    <p class="form__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <section class="form__personal-data">
+      <fieldset class="form__feedback">
+        <ul class="form__list">
+          <li class="form__list-item">
+            <label class="form__label" for="family-field"> фамилия:</label>
+            <input type="text" name="family" id="family-field" class="form__input" placeholder="Введите Ваше имя *" required>
+          </li>
+          <li class="form__list-item">
+            <label class="form__label" for="name-field"> имя:</label>
+            <input type="text" name="name" id="name-field" class="form__input" placeholder="Укажите фамилию *" required>
+          </li>
+          <li class="form__list-item">
+            <label class="form__label" for="secondName-field"> отчество:</label>
+            <input type="text" name="secondName" id="secondName-field" class="form__input" placeholder="Ну и отчество тоже">
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+    <section class="user-progress">
+      <fieldset class="user-progress__feedback">
         <legend class="user-progress__headline">ваши безбашенные достижения в путишествии</legend>
         <ul class="user-progress__list">
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="selfy" type="checkbox" name="selfy" value="true" checked="checked">
-          <label class="user-progress__label user-progress__label--checkbox" for="selfy">Сделал селфи с акулой</label>
-        </li>
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="sunburn" type="checkbox" name="sunburn" value="true" checked>
-          <label class="user-progress__label user-progress__label--checkbox" for="sunburn">Обгорел на пляже</label>
-        </li>
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="norris" type="checkbox" name="norris" value="true">
-          <label class="user-progress__label user-progress__label--checkbox" for="norris">Видел Чака Нориса</label>
-        </li>
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="suvenir" type="checkbox" name="suvenir" value="true">
-          <label class="user-progress__label user-progress__label--checkbox" for="suvenir">Накупил сувениров</label>
-        </li>
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="tower" type="checkbox" name="tower" value="true" checked>
-          <label class="user-progress__label user-progress__label--checkbox" for="tower">Удержал башню</label>
-        </li>
-        <li class="user-progress__list-item">
-          <input class="user-progress__input" id="hotel" type="checkbox" name="hotel" value="true">
-          <label class="user-progress__label user-progress__label--checkbox" for="hotel">Разгромил отель</label>
-        </li>
-      </ul>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="selfy" type="checkbox" name="selfy" value="true" checked="checked">
+            <label class="user-progress__label user-progress__label--checkbox" for="selfy">Сделал селфи с акулой</label>
+          </li>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="sunburn" type="checkbox" name="sunburn" value="true" checked>
+            <label class="user-progress__label user-progress__label--checkbox" for="sunburn">Обгорел на пляже</label>
+          </li>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="norris" type="checkbox" name="norris" value="true">
+            <label class="user-progress__label user-progress__label--checkbox" for="norris">Видел Чака Нориса</label>
+          </li>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="suvenir" type="checkbox" name="suvenir" value="true">
+            <label class="user-progress__label user-progress__label--checkbox" for="suvenir">Накупил сувениров</label>
+          </li>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="tower" type="checkbox" name="tower" value="true" checked>
+            <label class="user-progress__label user-progress__label--checkbox" for="tower">Удержал башню</label>
+          </li>
+          <li class="user-progress__list-item">
+            <input class="user-progress__input" id="hotel" type="checkbox" name="hotel" value="true">
+            <label class="user-progress__label user-progress__label--checkbox" for="hotel">Разгромил отель</label>
+          </li>
+        </ul>
       </fieldset>
-      </section>
-      <section class="user-adress">
-        <fieldset class="user-adress__feedback">
+    </section>
+    <section class="user-adress">
+      <fieldset class="user-adress__feedback">
         <legend class="user-adress__question">контактная информация</legend>
         <ul class="user-adress__list">
-        <li class="user-adress__list-item">
-          <label class="user-adress__label" for="tlf-field"> номер телефона </label>
-          <input type="tel" name="tel" id="tlf-field" class="user-adress__input" placeholder="Номер, пожалуйста">
-        </li>
-        <li class="user-adress__list-item">
-          <label class="user-adress__label" for="mail-field"> адресс почты </label>
-          <input type="text" name="mail" id="mail-field" class="user-adress__input" placeholder="Введите почту" required>
-        </li>
-      </ul>
+          <li class="user-adress__list-item">
+            <label class="user-adress__label" for="tlf-field"> номер телефона </label>
+            <input type="tel" name="tel" id="tlf-field" class="user-adress__input" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="user-adress__list-item">
+            <label class="user-adress__label" for="mail-field"> адресс почты </label>
+            <input type="text" name="mail" id="mail-field" class="user-adress__input" placeholder="Введите почту" required>
+          </li>
+        </ul>
       </fieldset>
-      </section>
-      <section class="user-app">
-        <fieldset class="user-app__feedback">
+    </section>
+    <section class="user-app">
+      <fieldset class="user-app__feedback">
         <legend class="user-app__question">С каким приложением путешествовали?</legend>
         <ul class="user-app__list">
           <li class="user-app__list-item">
@@ -126,45 +125,44 @@
           </li>
         </ul>
       </fieldset>
-      </section>
-        <fieldset class="user-message">
-          <legend class="user-message__question">опишите свои эмоции</legend>
-          <textarea id="user-message" class="user-message__area" name="textarea" rows="10" cols="50" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <div class="submit">
-      	<div class="submit__area">
-        	<input class="submit__button" type="submit" value="отправить форму">
-      	</div>
-      	<div class="submit__required"><span class="form__star">*</span>- обязательные поля</div>
+    </section>
+    <fieldset class="user-message">
+      <legend class="user-message__question">опишите свои эмоции</legend>
+      <textarea id="user-message" class="user-message__area" name="textarea" rows="10" cols="50" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </fieldset>
+    <div class="submit">
+      <div class="submit__area">
+        <input class="submit__button" type="submit" value="отправить форму">
       </div>
+      <div class="submit__required"><span class="form__star">*</span>- обязательные поля</div>
+    </div>
   </form>
-</div>
 </main>
 <footer class="page-footer__wrapper">
 
-    <a class="page-footer__logo">
+  <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Интернет-магазин 'Pink'">
       </a>
-    <section class="social-links">
-      <a class="social-links__link social-links__link-tw" href="https://twitter.com/">
+  <section class="social-links">
+    <a class="social-links__link social-links__link-tw" href="https://twitter.com/">
             <img class="social-icon social-icon__tw" src="img/icon-twitter.svg">
             Twitter
           </a>
-      <a class="social-links__link social-links__link-fb" href="https://ru-ru.facebook.com/">
+    <a class="social-links__link social-links__link-fb" href="https://ru-ru.facebook.com/">
             <img class="social-icon social-icon__fb" src="img/icon-facebook.svg">
             Facebook
           </a>
-      <a class="social-links__link social-links__link-you" href="https://www.youtube.com/">
+    <a class="social-links__link social-links__link-you" href="https://www.youtube.com/">
             <img class="social-icon social-icon__you" src="img/icon-youtube.svg">
             Youtube</a>
-    </section>
-    <section class="social-links__dev">
-      <a class="social-links__copyright-link" href="https://htmlacademy.ru">
+  </section>
+  <section class="social-links__dev">
+    <a class="social-links__copyright-link" href="https://htmlacademy.ru">
           Разработано
         </a>
-      <img class="social-links__logo-htmlacademy" src="img/htmlacademy.svg" width="42" height="49">
-    </section>
+    <img class="social-links__logo-htmlacademy" src="img/htmlacademy.svg" width="42" height="49">
+  </section>
 
-  </footer>
+</footer>
 
 </html>

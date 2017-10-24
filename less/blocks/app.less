@@ -15,15 +15,19 @@
     height: 286px;
     top: 110px;
     left: 20px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    	background-image: url("../img/iphone-hand-mobile@2x.png");
+    	background-size: 516px 572px;
+    }
 	}
 	&__slogan {
 		display: none;
 	}
   &__app-button-content {
-  	box-sizin: content-box;
-    width: 280px;
+  	box-sizing: content-box;
+    width: 100%;
     margin: 0 auto;
-    padding: 4.33% 15%;
+    padding: 4.33% 14%;
     padding-bottom: 20px;
     text-decoration: none;
     border: 3px solid @white;
@@ -48,6 +52,11 @@
   &__itunes {
     margin-top: 32px;
     margin-left: 37px;
+  }
+  &__itunes-icon {
+  	width: 48px;
+  	height: 45px;
+  	fill: @blue;
   }
   &__android,
   &__win {
@@ -82,6 +91,10 @@
     height: 545px;
     top: 75px;
     left: -25px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    	background-image: url("../img/iphone-hand-tablet@2x.png");
+    	background-size: 536px 962px;
+    }
   }
   .app {
     width: 300px;
@@ -123,5 +136,9 @@
     height: 645px;
     top: 98px;
     left: 28px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    	background-image: url("../img/iphone-hand-desktop@2x.png");
+    	background-size: 2100px 1290px;
+    }
   }
 }

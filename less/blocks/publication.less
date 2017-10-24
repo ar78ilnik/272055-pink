@@ -109,12 +109,16 @@
     top: 85px;
     left: 4px;
   }
-  .contrast,
+  .contrast {
+  	width: 32px;
+  	height: 32px;
+  	fill: @red;
+  }
   .crop,
   .fill {
     fill: @red;
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
   }
   .publication__tool--active + .controls {
     display: block;
@@ -139,8 +143,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .publication {
+  .publication__wrapper {
     width: 940px;
+    margin: 0 auto;
   }
   .publication__title {
     padding-bottom: 66px;
@@ -149,8 +154,13 @@
     font-weight: lighter;
   }
   .publication__form {
-    justify-content: flex-start;
-    padding-bottom: 57px;
+    width: 85.1%;
+    margin: 0 auto;
+  }
+  .publication__button-down {
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
   }
   .publication__form-box {
     width: 300px;
@@ -171,18 +181,23 @@
   }
   .publication__tool--crop {
     top: -5px;
-    left: -2px;
+    left: -25px;
   }
   .publication__tool--active {
-    top: 70px;
-    left: -2px;
+    top: 60px;
+    left: -25px;
   }
   .publication__tool--contrast {
-    top: 147px;
-    left: 5px;
+    top: 124px;
+    left: -25px;
     width: 32px;
     height: 32px;
   }
+  .publication__tool--fill {
+  	top: 60px;
+  	left: -25px;
+  }
+
   .publication__button {
     width: 183px;
     margin: 0;
@@ -192,8 +207,14 @@
     padding-left: 42px;
     padding-right: 37px;
   }
+  .publication__button--submit:hover {
+  	cursor: pointer;
+  }
   .publication__button--reset {
     padding-left: 55px;
     padding-right: 51px;
+  }
+  .publication__button--reset:hover {
+  	cursor: pointer;
   }
 }
